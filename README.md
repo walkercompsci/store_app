@@ -1,7 +1,6 @@
 # store_app
 
-A new Flutter project.
-
+Store App made by ethan and alan 
 ## Getting Started
 
 This project is a starting point for a Flutter application.
