@@ -1,6 +1,6 @@
 # store_app
 
-Store App made by ethan and alan 
+Store App made by Sir Ethan and alan 
 ## Getting Started
 
 This project is a starting point for a Flutter application.
