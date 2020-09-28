@@ -12,7 +12,7 @@ class SpecialHandsApp extends StatefulWidget {
 class _SpecialHandsAppState extends State<SpecialHandsApp> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
 
