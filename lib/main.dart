@@ -1,18 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:Notes/begin.dart';
+import 'package:Notes/contacts.dart';
+import 'package:Notes/mission.dart';
+import 'package:Notes/pictures.dart';
+import 'package:Notes/products.dart';
+
+
 
 void main() => runApp(MaterialApp(
-    home: SpecialHandsApp(),
-)); 
+  initialRoute: '/',
+  routes: {
+    '/begin': (context) => Begin(),
+    '/mission': (context) =>  Mission(),
+    '/pictures': (context) => Pictures(),
+    '/contacts': (context) => Contacts(),
+    '/products': (context) => Products(),
+  },
+));
 
-class SpecialHandsApp extends StatefulWidget {
-  @override
-  _SpecialHandsAppState createState() => _SpecialHandsAppState();
-}
 
-class _SpecialHandsAppState extends State<SpecialHandsApp> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
-  }
-}
 
