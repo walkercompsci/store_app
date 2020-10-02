@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:Notes/begin.dart';
-import 'package:Notes/contacts.dart';
-import 'package:Notes/mission.dart';
-import 'package:Notes/pictures.dart';
-import 'package:Notes/products.dart';
+import 'package:store_app/begin.dart';
+import 'package:store_app/contacts.dart';
+import 'package:store_app/mission.dart';
+import 'package:store_app/pictures.dart';
+import 'package:store_app/products.dart';
 
 
 
 void main() => runApp(MaterialApp(
-  initialRoute: '/',
+  initialRoute: '/begin',
   routes: {
     '/begin': (context) => Begin(),
     '/mission': (context) =>  Mission(),
