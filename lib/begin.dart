@@ -11,31 +11,34 @@ class _BeginState extends State<Begin> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.lightBlue[100],
-      body:
-          Padding(
-            padding: const EdgeInsets.fromLTRB(625, 20, 0, 20),
-            child: Column(
-              children: [
-                Text(
-        'Special Hands',
-                  style: TextStyle(
-                    color: Colors.blue,
-                    letterSpacing: 2.0,
-                    fontSize: 50.0
-                  ),
-                ),
-                SizedBox(height: 50,),
-                Text(
-                  'Our Mission',
-                    style: TextStyle(
-                      color: Colors.blueGrey,
-                      letterSpacing: 2.0,
-                      fontSize: 28.0,
-                    ),
-                ),
-              ],
+      body:SafeArea(
+        child: Column(
+          children: [
+            Text(
+              'Special Hands',
+              style: TextStyle(
+                color: Colors.blue,
+                letterSpacing: 2.0,
+                fontSize: 50.0,
+              ),
             ),
-          ),
+            SizedBox(height: 50),
+            Text(
+              'Our Mission',
+              style: TextStyle(
+                color: Colors.blueGrey,
+                letterSpacing: 2.0,
+                fontSize: 28.0,
+              ),
+            ),
+            //FlatButton.icon(
+              //onPressed: () {
+                //Navigator.pushNamed(context, '/mission');
+                //},
+            //),
+          ],
+        ),
+      ),
     );
   }
 }
