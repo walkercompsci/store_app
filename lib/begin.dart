@@ -31,11 +31,34 @@ class _BeginState extends State<Begin> {
                 fontSize: 28.0,
               ),
             ),
-            FlatButton.icon(onPressed: () {
-                Navigator.pushNamed(context, '/mission');
-                },
-              icon: Icon(Icons.airport_shuttle),
-              label: Text("Mission"),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                  FlatButton.icon(onPressed: () {
+                    Navigator.pushNamed(context, '/mission');
+                    },
+                    icon: Icon(Icons.airport_shuttle),
+                    label: Text("Mission"),
+                ),
+                  FlatButton.icon(onPressed: () {
+                    Navigator.pushNamed(context, '/contacts');
+                    },
+                    icon: Icon(Icons.account_circle_rounded),
+                    label: Text("contacts"),
+                ),
+                  FlatButton.icon(onPressed: () {
+                    Navigator.pushNamed(context, '/pictures');
+                    },
+                    icon: Icon(Icons.add_a_photo),
+                    label: Text("pictures"),
+                ),
+                  FlatButton.icon(onPressed: () {
+                    Navigator.pushNamed(context, '/products');
+                    },
+                    icon: Icon(Icons.wb_sunny),
+                    label: Text("products"),
+                ),
+              ],
             ),
           ],
         ),
