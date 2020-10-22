@@ -31,11 +31,12 @@ class _BeginState extends State<Begin> {
                 fontSize: 28.0,
               ),
             ),
-            //FlatButton.icon(
-              //onPressed: () {
-                //Navigator.pushNamed(context, '/mission');
-                //},
-            //),
+            FlatButton.icon(onPressed: () {
+                Navigator.pushNamed(context, '/mission');
+                },
+              icon: Icon(Icons.airport_shuttle),
+              label: Text("Mission"),
+            ),
           ],
         ),
       ),
