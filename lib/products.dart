@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+//import 'package:provider/provider.dart';
 
 class Products extends StatefulWidget {
   @override
@@ -10,7 +11,7 @@ class _ProductsState extends State<Products> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.grey[600],
+        backgroundColor: Colors.red[600],
         title: Text("Products"),
         centerTitle: true,
         elevation: 0,
