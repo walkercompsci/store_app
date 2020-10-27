@@ -22,7 +22,7 @@ class _BeginState extends State<Begin> {
                 fontSize: 50.0,
               ),
             ),
-            SizedBox(height: 50),
+            SizedBox(height: 20),
             Text(
               'Our Mission',
               style: TextStyle(
@@ -31,6 +31,7 @@ class _BeginState extends State<Begin> {
                 fontSize: 28.0,
               ),
             ),
+            SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -57,6 +58,89 @@ class _BeginState extends State<Begin> {
                     },
                     icon: Icon(Icons.wb_sunny),
                     label: Text("products"),
+                ),
+              ],
+            ),
+            SizedBox(height: 15),
+            const Divider(
+              height: 20,
+              thickness: 5,
+              indent: 20,
+              endIndent: 20,
+              color: Colors.black,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+
+                Column(
+                  children: [
+                    Image.asset('assets/dog1.jpg',
+                    height: 400,
+                    width: 400,
+                    ),
+                    Text( 'DOG 1!',
+                    style: TextStyle(
+                    color: Colors.blueGrey,
+                    letterSpacing: 2.0,
+                    fontSize: 18.0,
+                      ),
+                    ),
+
+                    Text( 'This dog is black and white',
+                      style: TextStyle(
+                        color: Colors.blueGrey,
+                        letterSpacing: 2.0,
+                        fontSize: 12.0,
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(width: 100),
+                Column(
+                  children: [
+                    Image.asset('assets/dog2.jpg',
+                    height: 400,
+                    width: 400,
+                    ),
+                    Text( 'DOG 2!',
+                      style: TextStyle(
+                        color: Colors.blueGrey,
+                        letterSpacing: 2.0,
+                        fontSize: 18.0,
+                      ),
+                    ),
+                    Text( 'This dog is very little!',
+                      style: TextStyle(
+                        color: Colors.blueGrey,
+                        letterSpacing: 2.0,
+                        fontSize: 12.0,
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(width: 100),
+                Column(
+                  children: [
+                    Image.asset('assets/dog3.jpg',
+                    height: 400,
+                    width: 400,
+                      ),
+                    Text( 'DOG 3!',
+                      style: TextStyle(
+                        color: Colors.blueGrey,
+                        letterSpacing: 2.0,
+                        fontSize: 18.0,
+                      ),
+                    ),
+                    Text( 'This dog has glasses!',
+                      style: TextStyle(
+                        color: Colors.blueGrey,
+                        letterSpacing: 2.0,
+                        fontSize: 12.0,
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
