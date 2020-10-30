@@ -23,15 +23,6 @@ class _BeginState extends State<Begin> {
               ),
             ),
             SizedBox(height: 20),
-            Text(
-              'Our Mission',
-              style: TextStyle(
-                color: Colors.blueGrey,
-                letterSpacing: 2.0,
-                fontSize: 28.0,
-              ),
-            ),
-            SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -65,9 +56,25 @@ class _BeginState extends State<Begin> {
             const Divider(
               height: 20,
               thickness: 5,
-              indent: 20,
-              endIndent: 20,
+              indent: 500,
+              endIndent: 500,
               color: Colors.black,
+            ),
+            SizedBox(height: 10,),
+            Text(
+              'Featured Products',
+              style: TextStyle(
+                color: Colors.blueGrey,
+                letterSpacing: 2.0,
+                fontSize: 28.0,
+              ),
+            ),
+            const Divider(
+              height: 20,
+              thickness: 3,
+              indent: 675,
+              endIndent: 675,
+              color: Colors.black26,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -75,7 +82,8 @@ class _BeginState extends State<Begin> {
 
                 Column(
                   children: [
-                    Image.asset('assets/dog1.jpg',
+                    Image.asset(
+                    'assets/dog1.jpg',
                     height: 400,
                     width: 400,
                     ),
@@ -143,6 +151,22 @@ class _BeginState extends State<Begin> {
                   ],
                 ),
               ],
+            ),
+            SizedBox(height: 15),
+            const Divider(
+              height: 20,
+              thickness: 5,
+              indent: 20,
+              endIndent: 20,
+              color: Colors.black26,
+            ),
+            SizedBox(height: 10.0),
+            Text( 'For More Information Click On The Icons Above! (Shipping And Pricing May Very)',
+              style: TextStyle(
+                color: Colors.blueGrey,
+                letterSpacing: 2.0,
+                fontSize: 16.0,
+              ),
             ),
           ],
         ),
