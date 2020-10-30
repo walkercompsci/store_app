@@ -8,6 +8,7 @@ import 'package:store_app/products.dart';
 
 
 void main() => runApp(MaterialApp(
+  debugShowCheckedModeBanner: false,
   initialRoute: '/begin',
   routes: {
     '/begin': (context) => Begin(),
