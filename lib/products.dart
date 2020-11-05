@@ -9,9 +9,14 @@ class Products extends StatefulWidget {
 class _ProductsState extends State<Products> {
   var product_list = [
     {
-     "name": "Treats",
-     "picture": "assets/dog3.jpg",
-     "price": 20,
+      "name": "Treats",
+      "picture": "assets/dog3.jpg",
+      "price": 20,
+    },
+    {
+      "name": "Treat",
+      "picture": "assets/dog3.jpg",
+      "price": 20,
     }
   ];
   @override
@@ -30,38 +35,7 @@ class _ProductsState extends State<Products> {
           ),
         ],
       ),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: Column(
-            children: <Widget>[
-          new Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Expanded(
-                  child: Column(children: <Widget>[
-                    Image.asset('assets/dog2.jpg'),
-                    Text('Dog')
-                  ],)
-              ),
-              Expanded(
-                  child: Column(children: <Widget>[
-                    Image.asset('assets/dog2.jpg'),
-                    Text('Dog')
-                  ],)
-              ),
-              Expanded(
-                  child: Column(children: <Widget>[
-                    Image.asset('assets/dog2.jpg'),
-                    Text('Dog')
-                  ],)
-              ),
-          ],
-          ),],
-      ),
-        ),
-      //body: ListView,
-    ),
+
     );
   }
 }
@@ -70,11 +44,9 @@ class Single_product extends StatelessWidget {
   //final prod_name;
   //final prod_picture;
   //final prod_price;
-
   //Single_prod()
   @override
   Widget build(BuildContext context) {
     return Container();
   }
 }
-
