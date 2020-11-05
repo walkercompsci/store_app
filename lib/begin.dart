@@ -19,7 +19,7 @@ class _BeginState extends State<Begin> {
               style: TextStyle(
                 color: Colors.blue,
                 letterSpacing: 2.0,
-                fontSize: 50.0,
+                fontSize: 49.0,
               ),
             ),
             SizedBox(height: 20),
