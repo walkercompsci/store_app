@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:provider/provider.dart';
+import 'package:store_app/products_display.dart';
 
 class Products extends StatefulWidget {
   @override
@@ -7,26 +7,14 @@ class Products extends StatefulWidget {
 }
 
 class _ProductsState extends State<Products> {
-  var product_list = [
-    {
-      "name": "Treats",
-      "picture": "assets/dog3.jpg",
-      "price": 20,
-    },
-    {
-      "name": "Treat",
-      "picture": "assets/dog3.jpg",
-      "price": 20,
-    }
-  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red[600],
-        title: Text("Products"),
-        centerTitle: true,
-        elevation: 0,
+        elevation: 0.1,
+        backgroundColor: Colors.red,
+        title: Text('Products'),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.shopping_cart),
@@ -35,18 +23,20 @@ class _ProductsState extends State<Products> {
           ),
         ],
       ),
-
+      body: ListView(
+        shrinkWrap: true,
+        children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+//                padding: EdgeInsets.only(top: 8.0),
+//                margin: EdgeInsets.only(top:10.0),
+                height: MediaQuery.of(context).size.height,
+                child: ProductsDetails(),
+              ),
+            ),
+        ],
+      ),
     );
-  }
-}
-
-class Single_product extends StatelessWidget {
-  //final prod_name;
-  //final prod_picture;
-  //final prod_price;
-  //Single_prod()
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
