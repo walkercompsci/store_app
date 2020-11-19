@@ -33,6 +33,7 @@ class _ProductsState extends State<Products> {
 //                margin: EdgeInsets.only(top:10.0),
                 height: MediaQuery.of(context).size.height,
                 child: ProductsDetails(),
+                //test
               ),
             ),
         ],
