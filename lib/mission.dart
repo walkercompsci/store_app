@@ -13,97 +13,102 @@ class _MissionState extends State<Mission> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.yellow[200],
+      backgroundColor: Colors.green[200],
       body: SafeArea(
         child: Column(
           children: [
-            SizedBox(width: 1500,),
+            AppBar(
+              backgroundColor: Colors.green[600],
+              title: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.airport_shuttle),
+                  SizedBox(width: 10),
+                  Text("Mission"),
+                  SizedBox(width: 10),
+                  FlatButton.icon(onPressed: () {
+                    Navigator.pushNamed(context, '/contacts');
+                  },
+                    icon: Icon(Icons.account_circle_rounded),
+                    label: Text("Contacts"),
+                  ),
+                  SizedBox(width: 10,),
+                  FlatButton.icon(onPressed: () {
+                    Navigator.pushNamed(context, '/pictures');
+                  },
+                    icon: Icon(Icons.add_a_photo),
+                    label: Text("Community"),
+                  ),
+                  SizedBox(width: 10,),
+                  FlatButton.icon(onPressed: () {
+                    Navigator.pushNamed(context, '/products');
+                  },
+                    icon: Icon(Icons.wb_sunny),
+                    label: Text("Products"),
+                  ),
+                ],
+              ),
+              actions: <Widget>[
+                IconButton(
+                  icon: Icon(Icons.shopping_cart),
+                  color: Colors.white,
+                  onPressed: () {},
+                ),
+              ],
+            ),
+            SizedBox(height: 10,),
             Text(
-              'Special Hands',
+              'Our Job Here At Walker Career Center',
               style: TextStyle(
-                color: Colors.blue,
+                color: Colors.white,
                 letterSpacing: 2.0,
                 fontSize: 50.0,
               ),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 30,),
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                FlatButton.icon(onPressed: () {
-                  Navigator.pushNamed(context, '/mission');
-                },
-                  icon: Icon(Icons.airport_shuttle),
-                  label: Text("Mission"),
-                ),
-                FlatButton.icon(onPressed: () {
-                  Navigator.pushNamed(context, '/contacts');
-                },
-                  icon: Icon(Icons.account_circle_rounded),
-                  label: Text("contacts"),
-                ),
-                FlatButton.icon(onPressed: () {
-                  Navigator.pushNamed(context, '/pictures');
-                },
-                  icon: Icon(Icons.add_a_photo),
-                  label: Text("pictures"),
-                ),
-                FlatButton.icon(onPressed: () {
-                  Navigator.pushNamed(context, '/products');
-                },
-                  icon: Icon(Icons.wb_sunny),
-                  label: Text("products"),
-                ),
-              ],
-            ),
-            SizedBox(height: 15),
-            const Divider(
-              height: 20,
-              thickness: 5,
-              indent: 500,
-              endIndent: 500,
-              color: Colors.black,
-            ),
-            SizedBox(height: 10,),
-            Text(
-              'Our Mission',
-              style: TextStyle(
-                color: Colors.blueGrey,
-                letterSpacing: 2.0,
-                fontSize: 28.0,
-              ),
-            ),
-            const Divider(
-              height: 20,
-              thickness: 3,
-              indent: 675,
-              endIndent: 675,
-              color: Colors.black26,
-            ),
-            SizedBox(height: 10,),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Column(
-                  children: [
-                    Text(
-                      'Our job here at the WC.',
-                      style: TextStyle(
-                        color: Colors.blue,
-                        letterSpacing: 2.0,
-                        fontSize: 50.0,
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(100, 0, 0, 0),
+                  child: Column(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.green[100],
+                          border: Border.all(
+                            color: Colors.black,
+                            width: 4,
+                          ),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        width: 350,
+                        child: Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Text(
+                            'We sell to township employees and student families but we have been approached about selling further into communities.',
+                            style: TextStyle(
+                              color: Colors.green[900],
+                              letterSpacing: 2.0,
+                              fontSize: 22.0,
+                            ),
+                            overflow: TextOverflow.ellipsis,
+                            maxLines: 7,
+                          ),
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-                SizedBox(width: 30,),
-                Column(
-                  children: [
-
-                  ],
+                SizedBox(width: 100,),
+                Expanded(
+                  child: Image.asset(
+                    'assets/dog1.jpg',
+                    height: 500,
+                    width: 500,
+                  ),
                 ),
               ],
-            )
+            ),
           ],
         ),
       ),
