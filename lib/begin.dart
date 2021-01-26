@@ -76,17 +76,15 @@ class _BeginState extends State<Begin> {
               endIndent: 675,
               color: Colors.black26,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-
-                Column(
-                  children: [
-                    Image.asset(
-                      'assets/dog1.jpg',
-                      height: 400,
-                      width: 400,
-                    ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: new Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Expanded(
+                  child: Column(children: <Widget>[
+                    Image.asset('assets/dog1.jpg'),
+                    Text('Dog'),
                     Text( 'DOG 1!',
                       style: TextStyle(
                         color: Colors.blueGrey,
@@ -102,15 +100,13 @@ class _BeginState extends State<Begin> {
                         fontSize: 12.0,
                       ),
                     ),
-                  ],
-                ),
-                SizedBox(width: 100),
-                Column(
-                  children: [
-                    Image.asset('assets/dog2.jpg',
-                      height: 400,
-                      width: 400,
-                    ),
+                  ],)
+              ),
+              SizedBox(width: 15),
+              Expanded(
+                  child: Column(children: <Widget>[
+                    Image.asset('assets/dog2.jpg'),
+                    Text('Dog'),
                     Text( 'DOG 2!',
                       style: TextStyle(
                         color: Colors.blueGrey,
@@ -125,15 +121,13 @@ class _BeginState extends State<Begin> {
                         fontSize: 12.0,
                       ),
                     ),
-                  ],
-                ),
-                SizedBox(width: 100),
-                Column(
-                  children: [
-                    Image.asset('assets/dog3.jpg',
-                      height: 400,
-                      width: 400,
-                    ),
+                  ],)
+              ),
+              SizedBox(width: 15),
+              Expanded(
+                  child: Column(children: <Widget>[
+                    Image.asset('assets/dog3.jpg'),
+                    Text('Dog'),
                     Text( 'DOG 3!',
                       style: TextStyle(
                         color: Colors.blueGrey,
@@ -148,10 +142,9 @@ class _BeginState extends State<Begin> {
                         fontSize: 12.0,
                       ),
                     ),
-                  ],
-                ),
-              ],
-            ),
+                  ],)
+              ),
+            ],),),
             SizedBox(height: 15),
             const Divider(
               height: 20,

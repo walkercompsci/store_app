@@ -3,7 +3,7 @@ import 'package:store_app/begin.dart';
 import 'package:store_app/contacts.dart';
 import 'package:store_app/mission.dart';
 import 'package:store_app/pictures.dart';
-import 'package:store_app/products.dart';
+import 'package:store_app/prod.dart';
 
 
 
@@ -15,7 +15,7 @@ void main() => runApp(MaterialApp(
     '/mission': (context) =>  Mission(),
     '/pictures': (context) => Pictures(),
     '/contacts': (context) => Contacts(),
-    '/products': (context) => Products(),
+    '/products': (context) => Prod(),
   },
 ));
 
