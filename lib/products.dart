@@ -60,7 +60,7 @@ class _ProductsState extends State<Products> {
       body: new ListView(
         children: [
           new Container(
-            height: 500.0,
+            height: MediaQuery.of(context).size.height,
             child: GridTile(
               child: Container(
                 color: Colors.white,

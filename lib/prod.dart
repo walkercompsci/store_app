@@ -52,9 +52,8 @@ class _ProdState extends State<Prod> {
 
       body: ListView(
         children: [
-          //Padding(padding: const EdgeInsets.all(25.0),),
            Container(
-            height: 300.0,
+             height: MediaQuery.of(context).size.height,
             child: ProductsDetails(),
           ),
         ],
@@ -62,17 +61,3 @@ class _ProdState extends State<Prod> {
     );
   }
 }
-//   body: ListView(
-//     shrinkWrap: false,
-//     children: [
-//       Padding(
-//         padding: const EdgeInsets.all(8.0),
-//         child: Container(
-//           //padding: EdgeInsets.only(top: 8.0),
-//           //margin: EdgeInsets.only(top:10.0),
-//           height: MediaQuery.of(context).size.height,
-//           //child: ProductsDetails(),
-//         ),
-//       ),
-//     ],
-//   ),
