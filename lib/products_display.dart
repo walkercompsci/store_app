@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:store_app/prod.dart';
-//import 'package:store_app/products.dart';
+import 'package:store_app/products.dart';
 
 class ProductsDetails extends StatefulWidget {
   @override
@@ -10,59 +10,59 @@ class ProductsDetails extends StatefulWidget {
 class _ProductsDetailsState extends State<ProductsDetails> {
 
   // ignore: non_constant_identifier_names
-  var product_list = [
+  var prod_list = [
     {
       "name": "Treats",
-      "picture": "assets/dog3.jpg",
-      "price": 20,
+      "picture": "assets/dog1.jpg",
+      "price": 10,
     },
     {
       "name": "Treat",
-      "picture": "assets/dog3.jpg",
+      "picture": "assets/dog2.jpg",
       "price": 20,
     },
     {
       "name": "Trea",
       "picture": "assets/dog3.jpg",
-      "price": 20,
+      "price": 30,
     },
     {
       "name": "Tre",
-      "picture": "assets/dog3.jpg",
-      "price": 20,
+      "picture": "assets/dog1.jpg",
+      "price": 40,
     },
     {
       "name": "Tr",
-      "picture": "assets/dog3.jpg",
-      "price": 20,
+      "picture": "assets/dog2.jpg",
+      "price": 50,
     }
   ];
 
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      itemCount: product_list.length,
+      itemCount: prod_list.length,
       gridDelegate:
       new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
       itemBuilder: (BuildContext context, int index){
-        return Single_product(
-          product_name: product_list[index]['name'],
-          product_picture: product_list[index]['picture'],
-          product_price: product_list[index]['price'],
+        return Single_prod(
+          prod_name: prod_list[index]['name'],
+          prod_picture: prod_list[index]['picture'],
+          prod_price: prod_list[index]['price'],
         );
       });
   }
 }
 
-class Single_product extends StatelessWidget {
-  final product_name;
-  final product_picture;
-  final product_price;
+class Single_prod extends StatelessWidget {
+  final prod_name;
+  final prod_picture;
+  final prod_price;
 
-  Single_product({
-    this.product_name,
-    this.product_picture,
-    this.product_price,
+  Single_prod({
+    this.prod_name,
+    this.prod_picture,
+    this.prod_price,
   });
 
   @override
@@ -70,33 +70,33 @@ class Single_product extends StatelessWidget {
     return Card(
       // Creates an animation when going to another page
       child: Hero(
-          tag: product_name,
+          tag: prod_name,
           child: Material(
             child: InkWell(
               onTap: () => Navigator.of(context).push(new MaterialPageRoute(
                 //passing values to new page
-                  builder: (context) => new Prod(
-                    prouduct_detail_name: product_name,
-                    prouduct_detail_price: product_price,
-                    prouduct_detail_picture: product_picture,
+                  builder: (context) => new Products(
+                    prod_detail_name: prod_name,
+                    prod_detail_price: prod_price,
+                    prod_detail_picture: prod_picture,
               ))),
               child: GridTile(
                 footer: Container(
                   color: Colors.white70,
                   child: ListTile(
                     leading: Text(
-                      product_name,
+                      prod_name,
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                     title: Text(
-                      "\$$product_price",
+                      "\$$prod_price",
                       style: TextStyle(
                           color: Colors.black, fontWeight: FontWeight.w800),
                     ),
                   ),
                 ),
                 child: Image.asset(
-                    product_picture,
+                    prod_picture,
                     fit: BoxFit.cover),
               ),
             ),

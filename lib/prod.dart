@@ -1,17 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:store_app/products.dart';
-import 'products.dart';
+import 'package:store_app/products_display.dart';
 
 class Prod extends StatefulWidget {
-  final prouduct_detail_name;
-  final prouduct_detail_price;
-  final prouduct_detail_picture;
-
-  Prod({
-    this.prouduct_detail_name,
-    this.prouduct_detail_price,
-    this.prouduct_detail_picture
-});
 
   @override
   _ProdState createState() => _ProdState();
@@ -61,18 +52,27 @@ class _ProdState extends State<Prod> {
 
       body: ListView(
         children: [
-          Padding(padding: const EdgeInsets.all(25.0),
-          //child: Text("Products"),
-          ),
-          new Container(
+          //Padding(padding: const EdgeInsets.all(25.0),),
+           Container(
             height: 300.0,
-            child: Products(),
+            child: ProductsDetails(),
           ),
-
         ],
-        
       ),
-
     );
   }
 }
+//   body: ListView(
+//     shrinkWrap: false,
+//     children: [
+//       Padding(
+//         padding: const EdgeInsets.all(8.0),
+//         child: Container(
+//           //padding: EdgeInsets.only(top: 8.0),
+//           //margin: EdgeInsets.only(top:10.0),
+//           height: MediaQuery.of(context).size.height,
+//           //child: ProductsDetails(),
+//         ),
+//       ),
+//     ],
+//   ),
