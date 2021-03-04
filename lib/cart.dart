@@ -1,23 +1,25 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-  home: Contacts(),
+  home: Cart(),
 ));
 
-class Contacts extends StatefulWidget {
+class Cart extends StatefulWidget {
   @override
-  _ContactsState createState() => _ContactsState();
+  _CartState createState() => _CartState();
 }
 
-class _ContactsState extends State<Contacts> {
+class _CartState extends State<Cart> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.tealAccent,
       body: SafeArea(
         child: Column(
           children: [
+
             AppBar(
-              backgroundColor: Colors.orange[600],
+              backgroundColor: Colors.teal,
               title: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -31,15 +33,20 @@ class _ContactsState extends State<Contacts> {
                     icon: Icon(Icons.water_damage),
                     label: Text("Home"),
                   ),
+                  SizedBox(width: 10),
                   FlatButton.icon(onPressed: () {
                     Navigator.pushNamed(context, '/mission');
                   },
                     icon: Icon(Icons.airport_shuttle),
                     label: Text("Mission"),
                   ),
-                  Icon(Icons.account_circle_rounded),
                   SizedBox(width: 10),
-                  Text("Contacts"),
+                  FlatButton.icon(onPressed: () {
+                    Navigator.pushNamed(context, '/contacts');
+                  },
+                    icon: Icon(Icons.account_circle_rounded),
+                    label: Text("Contacts"),
+                  ),
                   SizedBox(width: 10,),
                   FlatButton.icon(onPressed: () {
                     Navigator.pushNamed(context, '/pictures');
@@ -56,49 +63,14 @@ class _ContactsState extends State<Contacts> {
                   ),
                 ],
               ),
-              actions: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: IconButton(
-                    icon: Icon(Icons.shopping_cart),
-                    color: Colors.white,
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/cart');
-                    },
-                  ),
-                ),
-              ],
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                children: [
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      'Dena Condra',
-                      style: TextStyle(
-                        fontSize: 75.0,
-                      ),
-                    ),
-                  ),
-                  SizedBox(width: 15.0),
-                  CircleAvatar(
-                    backgroundImage: AssetImage('assets/dog1.jpg'),
-                    radius: 40.0,),
-                ],
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  'Email: dcondra@warren.k12.in.us',
-                  style: TextStyle(
-                      fontSize: 25.0
-                  ),
-                ),
+            SizedBox(height: 15),
+            Text(
+              'Your Cart',
+              style: TextStyle(
+                color: Colors.teal,
+                letterSpacing: 2.0,
+                fontSize: 50.0,
               ),
             ),
           ],
@@ -107,3 +79,7 @@ class _ContactsState extends State<Contacts> {
     );
   }
 }
+
+
+
+

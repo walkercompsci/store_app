@@ -50,6 +50,9 @@ flutter:
     - assets/dog1.jpg
     - assets/dog2.jpg
     - assets/dog3.jpg
+    - assets/sh1.jpg
+    - assets/sh2.jpg
+    - assets/sh3.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

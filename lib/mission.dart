@@ -22,6 +22,16 @@ class _MissionState extends State<Mission> {
               title: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  Text(
+                    'Special Hands',
+                    textAlign: TextAlign.left,
+                  ),
+                  FlatButton.icon(onPressed: () {
+                    Navigator.pushNamed(context, '/begin');
+                  },
+                    icon: Icon(Icons.water_damage),
+                    label: Text("Home"),
+                  ),
                   Icon(Icons.airport_shuttle),
                   SizedBox(width: 10),
                   Text("Mission"),
@@ -49,10 +59,15 @@ class _MissionState extends State<Mission> {
                 ],
               ),
               actions: <Widget>[
-                IconButton(
-                  icon: Icon(Icons.shopping_cart),
-                  color: Colors.white,
-                  onPressed: () {},
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: IconButton(
+                    icon: Icon(Icons.shopping_cart),
+                    color: Colors.white,
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/cart');
+                    },
+                  ),
                 ),
               ],
             ),

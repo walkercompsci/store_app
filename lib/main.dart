@@ -4,7 +4,7 @@ import 'package:store_app/contacts.dart';
 import 'package:store_app/mission.dart';
 import 'package:store_app/pictures.dart';
 import 'package:store_app/prod.dart';
-
+import 'package:store_app/cart.dart';
 
 
 void main() => runApp(MaterialApp(
@@ -16,6 +16,7 @@ void main() => runApp(MaterialApp(
     '/pictures': (context) => Pictures(),
     '/contacts': (context) => Contacts(),
     '/products': (context) => Prod(),
+    '/cart': (context) => Cart(),
   },
 ));
 

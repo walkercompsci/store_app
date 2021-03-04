@@ -21,6 +21,16 @@ class _PicturesState extends State<Pictures> {
             title: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Text(
+                  'Special Hands',
+                  textAlign: TextAlign.left,
+                ),
+                FlatButton.icon(onPressed: () {
+                  Navigator.pushNamed(context, '/begin');
+                },
+                  icon: Icon(Icons.water_damage),
+                  label: Text("Home"),
+                ),
                 FlatButton.icon(onPressed: () {
                   Navigator.pushNamed(context, '/mission');
                 },
@@ -45,14 +55,71 @@ class _PicturesState extends State<Pictures> {
                 ),
               ],
             ),
-            actions: <Widget>[
-              IconButton(
-                icon: Icon(Icons.shopping_cart),
-                color: Colors.white,
-                onPressed: () {},
-              ),
-            ],
+              actions: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: IconButton(
+                    icon: Icon(Icons.shopping_cart),
+                    color: Colors.white,
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/cart');
+                    },
+                  ),
+                ),
+              ],
           ),
+            SizedBox(height: 30),
+            Row(
+              children: [
+                Expanded(
+                  child: Image.asset(
+                    'assets/dog1.jpg',
+                    height: 250,
+                    width: 250,
+                  ),
+                ),
+                Expanded(
+                  child: Image.asset(
+                    'assets/dog2.jpg',
+                    height: 250,
+                    width: 250,
+                  ),
+                ),
+                Expanded(
+                  child: Image.asset(
+                    'assets/dog3.jpg',
+                    height: 250,
+                    width: 250,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 15),
+            Row(
+              children: [
+                Expanded(
+                  child: Image.asset(
+                    'assets/dog1.jpg',
+                    height: 250,
+                    width: 250,
+                  ),
+                ),
+                Expanded(
+                  child: Image.asset(
+                    'assets/dog2.jpg',
+                    height: 250,
+                    width: 250,
+                  ),
+                ),
+                Expanded(
+                  child: Image.asset(
+                    'assets/dog3.jpg',
+                    height: 250,
+                    width: 250,
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
