@@ -4,7 +4,7 @@ import 'package:store_app/contacts.dart';
 import 'package:store_app/mission.dart';
 import 'package:store_app/pictures.dart';
 import 'package:store_app/prod.dart';
-import 'package:store_app/form2.dart';
+import 'package:store_app/form2.dart';//
 
 void main() => runApp(MaterialApp(
   debugShowCheckedModeBanner: false,

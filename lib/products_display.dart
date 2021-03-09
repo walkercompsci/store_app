@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:store_app/prod.dart';
 import 'package:store_app/products.dart';
-//
+
 class ProductsDetails extends StatefulWidget {
   @override
   _ProductsDetailsState createState() => _ProductsDetailsState();
