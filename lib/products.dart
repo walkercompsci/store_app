@@ -1,7 +1,7 @@
 import 'package:store_app/prod.dart';
 import 'package:flutter/material.dart';
 import 'package:store_app/products_display.dart';
-
+//
 class Products extends StatefulWidget {
   final prod_detail_name;
   final prod_detail_price;
@@ -104,10 +104,13 @@ class _ProductsState extends State<Products> {
             children: [
               Expanded(
                   child: MaterialButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/form');
+                      },
                     color: Colors.red,
                     textColor: Colors.white,
                     elevation: 0.2,
+                    //Will send to form
                     child: Text("Buy now"),
                   ),
               ),

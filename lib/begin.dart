@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class Begin extends StatefulWidget {
   @override
   _BeginState createState() => _BeginState();
