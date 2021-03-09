@@ -3,7 +3,6 @@ import 'package:store_app/products.dart';
 import 'package:store_app/products_display.dart';
 
 class Prod extends StatefulWidget {
-
   @override
   _ProdState createState() => _ProdState();
 }

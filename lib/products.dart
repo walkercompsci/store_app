@@ -104,10 +104,13 @@ class _ProductsState extends State<Products> {
             children: [
               Expanded(
                   child: MaterialButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/form');
+                      },
                     color: Colors.red,
                     textColor: Colors.white,
                     elevation: 0.2,
+                    //Will send to form
                     child: Text("Buy now"),
                   ),
               ),
