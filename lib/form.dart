@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:validators/validators.dart' as validator;
-//
+import 'package:url_launcher/url_launcher.dart';
+
 class TextForm extends StatefulWidget {
   @override
   _TextFormState createState() => _TextFormState();
@@ -8,10 +9,25 @@ class TextForm extends StatefulWidget {
 
 class _TextFormState extends State<TextForm> {
   final _formKey = GlobalKey<FormState>();
+
+  // final Uri params = Uri(
+  //   scheme: 'mailto',
+  //   path: 'santeala000@warren.k12.in.us',
+  //   query: 'test test', //add subject and body here
+  // );
+  //
+  // var url = params.toString();
+  // _launchEmail() async {
+  //   if (await canLaunch(url))  {
+  //     await launch(url);
+  //   } else {
+  //     throw 'Could not launch $url';
+  //   }
+  // }
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size.width/2.0;
-
     return Form(
       key: _formKey,
       child: Column(
@@ -21,13 +37,48 @@ class _TextFormState extends State<TextForm> {
             width: size,
             child: MyTextFormField(
               hintText: 'First Name',
+              validator: (hintText) {
+                if (hintText.isEmpty) {
+                  return 'Please enter some text';
+                }
+                return null;
+                },
             ),
+          ),
+          ElevatedButton(
+            onPressed: () async {
+              // ignore: unnecessary_statements
+              const url = "mailto:alansantes20@gmail.com";
+              if(await canLaunch(url)){
+                await canLaunch(url);
+              }else{
+                throw "could not launch $url";
+              }
+              //sendEmail();
+              if(_formKey.currentState.validate()){
+                ScaffoldMessenger
+                    .of(context)
+                    .showSnackBar(SnackBar(content: Text('Processing Data')));
+              }
+              },
+            child: Text('Submit'),
           ),
         ],
       ),
     );
   }
 }
+
+class sendEmail extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+
+        );
+  }
+}
+
+
 
 class MyTextFormField extends StatelessWidget {
   final String hintText;
