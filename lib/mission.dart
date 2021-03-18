@@ -23,7 +23,7 @@ class _MissionState extends State<Mission> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'Special Hands',
+                    'Made By Special Hands',
                     textAlign: TextAlign.left,
                   ),
                   FlatButton.icon(onPressed: () {
@@ -73,7 +73,7 @@ class _MissionState extends State<Mission> {
             ),
             SizedBox(height: 10,),
             Text(
-              'Our Job Here At Walker Career Center',
+              '12+ Program at Walker Career Center',
               style: TextStyle(
                 color: Colors.white,
                 letterSpacing: 2.0,
@@ -100,14 +100,14 @@ class _MissionState extends State<Mission> {
                         child: Padding(
                           padding: const EdgeInsets.all(10.0),
                           child: Text(
-                            'We sell to township employees and student families but we have been approached about selling further into communities.',
+                            'The 12+ Program is designed for students with disabilities who are transitioning into post secondary adult life. Our mission as a 12+ Program is to prepare and support our students to be contributing members of the community through the development of communication, self advocacy, adaptive and vocational skills.',
                             style: TextStyle(
                               color: Colors.green[900],
                               letterSpacing: 2.0,
                               fontSize: 22.0,
                             ),
                             overflow: TextOverflow.ellipsis,
-                            maxLines: 7,
+                            maxLines: 14,
                           ),
                         ),
                       ),

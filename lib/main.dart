@@ -5,7 +5,7 @@ import 'package:store_app/mission.dart';
 import 'package:store_app/pictures.dart';
 import 'package:store_app/prod.dart';
 import 'package:store_app/cart.dart';
-import 'package:store_app/form2.dart';
+// import 'package:store_app/form2.dart';
 
 void main() => runApp(MaterialApp(
   debugShowCheckedModeBanner: false,
@@ -17,7 +17,7 @@ void main() => runApp(MaterialApp(
     '/contacts': (context) => Contacts(),
     '/products': (context) => Prod(),
     '/cart': (context) => Cart(),
-    '/form': (context) => ShowForm(),
+    // '/form': (context) => ShowForm(),
   },
 ));
 

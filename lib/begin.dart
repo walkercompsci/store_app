@@ -14,7 +14,7 @@ class _BeginState extends State<Begin> {
         child: Column(
           children: [
             Text(
-              'Special Hands',
+              'Made By Special Hands',
               style: TextStyle(
                 color: Colors.blue,
                 letterSpacing: 2.0,
@@ -75,12 +75,12 @@ class _BeginState extends State<Begin> {
               endIndent: 675,
               color: Colors.black26,
             ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: new Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Expanded(
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: new Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Expanded(
                   child: Column(children: <Widget>[
                     Image.asset('assets/dog1.jpg'),
                     Text('Dog'),

@@ -21,10 +21,9 @@ class _ContactsState extends State<Contacts> {
               title: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    'Special Hands',
-                    textAlign: TextAlign.left,
-                  ),
+                    Text(
+                      'Made By Special Hands',
+                    ),
                   FlatButton.icon(onPressed: () {
                     Navigator.pushNamed(context, '/begin');
                   },
@@ -69,38 +68,274 @@ class _ContactsState extends State<Contacts> {
                 ),
               ],
             ),
+            //Jill
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Row(
+              child: Column(
                 children: [
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      'Dena Condra',
-                      style: TextStyle(
-                        fontSize: 75.0,
-                      ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.orange[100],
+                            border: Border.all(
+                              color: Colors.black,
+                              width: 4,
+                            ),
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          width: 1100,
+                          child: Row(
+                            children: [
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                              'Jill Lines',
+                              style: TextStyle(
+                                fontSize: 50.0,
+                              ),
+                          ),
+                            ),
+                            SizedBox(width: 10.0),
+                            CircleAvatar(
+                              backgroundImage: AssetImage('assets/dog1.jpg'),
+                              radius: 40.0),
+                              SizedBox(width: 10.0),
+                              Expanded(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                      'Department Chair for Warren Central High School/Exceptional Learners  317-532-6200 ext 6401       Email: jlines@warren.k12.in.us',
+                                      style: TextStyle(
+                                        color: Colors.orange[900],
+                                        letterSpacing: 2.0,
+                                        fontSize: 20.0,
+                                      ),
+                                      overflow: TextOverflow.ellipsis,
+                                      maxLines: 2,
+                                    ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                  SizedBox(width: 15.0),
-                  CircleAvatar(
-                    backgroundImage: AssetImage('assets/dog1.jpg'),
-                    radius: 40.0,),
+                  //Veronica
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.orange[100],
+                            border: Border.all(
+                              color: Colors.black,
+                              width: 4,
+                            ),
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          width: 1280,
+                          child: Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  'Veronica Holmes',
+                                  style: TextStyle(
+                                    fontSize: 50.0,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(width: 10.0),
+                              CircleAvatar(
+                                  backgroundImage: AssetImage('assets/dog1.jpg'),
+                                  radius: 40.0),
+                              SizedBox(width: 10.0),
+                              Expanded(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    'Department Chair for Warren Central High School/Exceptional Learners  317-532-6200 ext 6401       Email: jlines@warren.k12.in.us',
+                                    style: TextStyle(
+                                      color: Colors.orange[900],
+                                      letterSpacing: 2.0,
+                                      fontSize: 20.0,
+                                    ),
+                                    overflow: TextOverflow.ellipsis,
+                                    maxLines: 2,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  //Dena
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.orange[100],
+                            border: Border.all(
+                              color: Colors.black,
+                              width: 4,
+                            ),
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          width: 1200,
+                          child: Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  'Dena Condra',
+                                  style: TextStyle(
+                                    fontSize: 50.0,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(width: 10.0),
+                              CircleAvatar(
+                                  backgroundImage: AssetImage('assets/dog1.jpg'),
+                                  radius: 40.0),
+                              SizedBox(width: 10.0),
+                              Expanded(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    'Department Chair for Warren Central High School/Exceptional Learners  317-532-6200 ext 6401       Email: jlines@warren.k12.in.us',
+                                    style: TextStyle(
+                                      color: Colors.orange[900],
+                                      letterSpacing: 2.0,
+                                      fontSize: 20.0,
+                                    ),
+                                    overflow: TextOverflow.ellipsis,
+                                    maxLines: 2,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  //Clark
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.orange[100],
+                            border: Border.all(
+                              color: Colors.black,
+                              width: 4,
+                            ),
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          width: 1175,
+                          child: Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  'Cheryl Clark',
+                                  style: TextStyle(
+                                    fontSize: 50.0,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(width: 10.0),
+                              CircleAvatar(
+                                  backgroundImage: AssetImage('assets/dog1.jpg'),
+                                  radius: 40.0),
+                              SizedBox(width: 10.0),
+                              Expanded(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    'Department Chair for Warren Central High School/Exceptional Learners  317-532-6200 ext 6401       Email: jlines@warren.k12.in.us',
+                                    style: TextStyle(
+                                      color: Colors.orange[900],
+                                      letterSpacing: 2.0,
+                                      fontSize: 20.0,
+                                    ),
+                                    overflow: TextOverflow.ellipsis,
+                                    maxLines: 2,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  //Bell
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.orange[100],
+                            border: Border.all(
+                              color: Colors.black,
+                              width: 4,
+                            ),
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          width: 1135,
+                          child: Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  'Airiele Bell',
+                                  style: TextStyle(
+                                    fontSize: 50.0,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(width: 10.0),
+                              CircleAvatar(
+                                  backgroundImage: AssetImage('assets/dog1.jpg'),
+                                  radius: 40.0),
+                              SizedBox(width: 10.0),
+                              Expanded(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    'Department Chair for Warren Central High School/Exceptional Learners  317-532-6200 ext 6401       Email: jlines@warren.k12.in.us',
+                                    style: TextStyle(
+                                      color: Colors.orange[900],
+                                      letterSpacing: 2.0,
+                                      fontSize: 20.0,
+                                    ),
+                                    overflow: TextOverflow.ellipsis,
+                                    maxLines: 2,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  'Email: dcondra@warren.k12.in.us',
-                  style: TextStyle(
-                      fontSize: 25.0
-                  ),
-                ),
-              ),
-            ),
+
           ],
         ),
       ),

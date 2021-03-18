@@ -22,8 +22,7 @@ class _PicturesState extends State<Pictures> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Special Hands',
-                  textAlign: TextAlign.left,
+                  'Made By Special Hands',
                 ),
                 FlatButton.icon(onPressed: () {
                   Navigator.pushNamed(context, '/begin');
@@ -73,53 +72,28 @@ class _PicturesState extends State<Pictures> {
               children: [
                 Expanded(
                   child: Image.asset(
-                    'assets/dog1.jpg',
-                    height: 250,
+                    'assets/sh1.jpg',
+                    height: 500,
                     width: 250,
                   ),
                 ),
                 Expanded(
                   child: Image.asset(
-                    'assets/dog2.jpg',
-                    height: 250,
-                    width: 250,
+                    'assets/sh2.jpg',
+                    height: 500,
+                    width: 500,
                   ),
                 ),
                 Expanded(
                   child: Image.asset(
-                    'assets/dog3.jpg',
-                    height: 250,
-                    width: 250,
+                    'assets/sh3.jpg',
+                    height: 500,
+                    width: 500,
                   ),
                 ),
               ],
             ),
-            SizedBox(height: 15),
-            Row(
-              children: [
-                Expanded(
-                  child: Image.asset(
-                    'assets/dog1.jpg',
-                    height: 250,
-                    width: 250,
-                  ),
-                ),
-                Expanded(
-                  child: Image.asset(
-                    'assets/dog2.jpg',
-                    height: 250,
-                    width: 250,
-                  ),
-                ),
-                Expanded(
-                  child: Image.asset(
-                    'assets/dog3.jpg',
-                    height: 250,
-                    width: 250,
-                  ),
-                ),
-              ],
-            ),
+
           ],
         ),
       ),
