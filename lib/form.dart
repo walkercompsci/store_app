@@ -1,4 +1,4 @@
-/* import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 
 class TextForm extends StatefulWidget {
@@ -48,11 +48,11 @@ class _TextFormState extends State<TextForm> {
             onPressed: () async {
               // ignore: unnecessary_statements
               const url = "mailto:alansantes20@gmail.com";
-              if(await canLaunch(url)){
-                await canLaunch(url);
-              }else{
-                throw "could not launch $url";
-              }
+              // if(await canLaunch(url)){
+              //   await canLaunch(url);
+              // }else{
+              //   throw "could not launch $url";
+              // }
               //sendEmail();
               if(_formKey.currentState.validate()){
                 ScaffoldMessenger
@@ -111,6 +111,5 @@ class MyTextFormField extends StatelessWidget {
     );
   }
 }
-*/
 
 
