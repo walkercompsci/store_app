@@ -1,4 +1,4 @@
-/* import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 
 class TextForm extends StatefulWidget {
@@ -68,6 +68,7 @@ class _TextFormState extends State<TextForm> {
   }
 }
 
+// ignore: camel_case_types
 class sendEmail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -111,6 +112,4 @@ class MyTextFormField extends StatelessWidget {
     );
   }
 }
-*/
-
 

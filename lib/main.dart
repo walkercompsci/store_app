@@ -17,7 +17,7 @@ void main() => runApp(MaterialApp(
     '/contacts': (context) => Contacts(),
     '/products': (context) => Prod(),
     '/cart': (context) => Cart(),
-    // '/form': (context) => ShowForm(),
+    '/form': (context) => ShowForm(),
   },
 ));
 
