@@ -23,6 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  validators: ^2.0.1
 
   provider: ^3.0.0
 

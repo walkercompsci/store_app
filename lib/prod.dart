@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:store_app/cart.dart';
 import 'package:store_app/products.dart';
 import 'package:store_app/products_display.dart';
 //
@@ -44,7 +45,9 @@ class _ProdState extends State<Prod> {
           IconButton(
             icon: Icon(Icons.shopping_cart),
             color: Colors.white,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => new Cart()));
+            },
           ),
         ],
       ),

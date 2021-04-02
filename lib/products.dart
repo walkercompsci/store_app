@@ -49,18 +49,18 @@ class _ProductsState extends State<Products> {
             SizedBox(width: 10,),
           ],
         ),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.shopping_cart),
-            color: Colors.white,
-            onPressed: () {},
-          ),
-        ],
+        // actions: <Widget>[
+        //   IconButton(
+        //     icon: Icon(Icons.shopping_cart),
+        //     color: Colors.white,
+        //     onPressed: () {},
+        //   ),
+        // ],
       ),
       body: new ListView(
         children: [
           new Container(
-            height: MediaQuery.of(context).size.height,
+            height: MediaQuery.of(context).size.width/2.0,
             child: GridTile(
               child: Container(
                 color: Colors.white,
@@ -86,7 +86,21 @@ class _ProductsState extends State<Products> {
             children: [
             Expanded(
               child: MaterialButton(
-                onPressed: () {},
+                onPressed: () {
+                  showDialog(context: context,
+                  builder: (context){
+                    return AlertDialog(
+                        title: Text("Quantity"),
+                      content: Text("Choose the quantity"),
+                      actions: [
+                        new MaterialButton(onPressed: (){
+                          Navigator.of(context).pop(context);
+                        },
+                        child: Text("close"),)
+                      ],
+                    );
+                  });
+                },
                 color: Colors.white,
                 textColor: Colors.grey,
                 elevation: 0.2,
@@ -116,6 +130,11 @@ class _ProductsState extends State<Products> {
               ),
               IconButton(icon: Icon(Icons.add_shopping_cart, color: Colors.red), onPressed: (){},),
             ],
+          ),
+          Divider(),
+          new ListTile(
+            title: Text("Product details"),
+            subtitle: Text("Place the information here about the product"),
           )
         ],
       ),

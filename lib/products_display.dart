@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:store_app/prod.dart';
 import 'package:store_app/products.dart';
-//
+
 class ProductsDetails extends StatefulWidget {
   @override
   _ProductsDetailsState createState() => _ProductsDetailsState();
@@ -70,7 +70,9 @@ class Single_prod extends StatelessWidget {
     return Card(
       // Creates an animation when going to another page
       child: Hero(
-          tag: prod_name,
+          tag:
+          //Text("hero 2"),
+          prod_name,
           child: Material(
             child: InkWell(
               onTap: () => Navigator.of(context).push(new MaterialPageRoute(
