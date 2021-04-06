@@ -100,7 +100,7 @@ class _ContactsState extends State<Contacts> {
                             ),
                             SizedBox(width: 10.0),
                             CircleAvatar(
-                              backgroundImage: AssetImage('assets/dog1.jpg'),
+                              backgroundImage: AssetImage('assets/jill.jpg'),
                               radius: 40.0),
                               SizedBox(width: 10.0),
                               Expanded(
@@ -152,7 +152,7 @@ class _ContactsState extends State<Contacts> {
                               ),
                               SizedBox(width: 10.0),
                               CircleAvatar(
-                                  backgroundImage: AssetImage('assets/dog1.jpg'),
+                                  backgroundImage: AssetImage('assets/veronica.jpg'),
                                   radius: 40.0),
                               SizedBox(width: 10.0),
                               Expanded(
@@ -204,7 +204,7 @@ class _ContactsState extends State<Contacts> {
                               ),
                               SizedBox(width: 10.0),
                               CircleAvatar(
-                                  backgroundImage: AssetImage('assets/dog1.jpg'),
+                                  backgroundImage: AssetImage('assets/dena.jpg'),
                                   radius: 40.0),
                               SizedBox(width: 10.0),
                               Expanded(
@@ -256,7 +256,7 @@ class _ContactsState extends State<Contacts> {
                               ),
                               SizedBox(width: 10.0),
                               CircleAvatar(
-                                  backgroundImage: AssetImage('assets/dog1.jpg'),
+                                  backgroundImage: AssetImage('assets/clark.jpg'),
                                   radius: 40.0),
                               SizedBox(width: 10.0),
                               Expanded(
@@ -308,7 +308,7 @@ class _ContactsState extends State<Contacts> {
                               ),
                               SizedBox(width: 10.0),
                               CircleAvatar(
-                                  backgroundImage: AssetImage('assets/dog1.jpg'),
+                                  backgroundImage: AssetImage('assets/bell.jpg'),
                                   radius: 40.0),
                               SizedBox(width: 10.0),
                               Expanded(

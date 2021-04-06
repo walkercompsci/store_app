@@ -19,6 +19,7 @@ class _BeginState extends State<Begin> {
                 color: Colors.blue,
                 letterSpacing: 2.0,
                 fontSize: 50.0,
+                fontFamily: 'Poppins'
               ),
             ),
             SizedBox(height: 20),
@@ -29,25 +30,41 @@ class _BeginState extends State<Begin> {
                   Navigator.pushNamed(context, '/mission');
                 },
                   icon: Icon(Icons.airport_shuttle),
-                  label: Text("Mission"),
+                  label: Text("Mission",
+                    style: TextStyle(
+                      fontFamily: 'Poppins'
+                    ),
+                  ),
                 ),
                 FlatButton.icon(onPressed: () {
                   Navigator.pushNamed(context, '/contacts');
                 },
                   icon: Icon(Icons.account_circle_rounded),
-                  label: Text("contacts"),
+                  label: Text("Contacts",
+                    style: TextStyle(
+                        fontFamily: 'Poppins'
+                    ),
+                  ),
                 ),
                 FlatButton.icon(onPressed: () {
                   Navigator.pushNamed(context, '/pictures');
                 },
                   icon: Icon(Icons.add_a_photo),
-                  label: Text("pictures"),
+                  label: Text("Community",
+                      style: TextStyle(
+                      fontFamily: 'Poppins'
+                    ),
+                  ),
                 ),
                 FlatButton.icon(onPressed: () {
                   Navigator.pushNamed(context, '/products');
                 },
                   icon: Icon(Icons.wb_sunny),
-                  label: Text("products"),
+                  label: Text("Products",
+                    style: TextStyle(
+                        fontFamily: 'Poppins'
+                    ),
+                  ),
                 ),
               ],
             ),
@@ -66,6 +83,7 @@ class _BeginState extends State<Begin> {
                 color: Colors.blueGrey,
                 letterSpacing: 2.0,
                 fontSize: 28.0,
+                fontFamily: 'Poppins',
               ),
             ),
             const Divider(
@@ -82,21 +100,26 @@ class _BeginState extends State<Begin> {
               children: [
                 Expanded(
                   child: Column(children: <Widget>[
-                    Image.asset('assets/dog1.jpg'),
-                    Text('Dog'),
-                    Text( 'DOG 1!',
+                    Image.asset('assets/sh3.jpg',
+                    width: 350,
+                    height: 350,
+                    ),
+                    SizedBox(height: 10),
+                    Text( 'Puppy Treats',
                       style: TextStyle(
                         color: Colors.blueGrey,
                         letterSpacing: 2.0,
                         fontSize: 18.0,
+                        fontFamily: 'Poppins'
                       ),
                     ),
 
-                    Text( 'This dog is black and white',
+                    Text( 'The little ones will love it!',
                       style: TextStyle(
                         color: Colors.blueGrey,
                         letterSpacing: 2.0,
                         fontSize: 12.0,
+                        fontFamily: 'Poppins'
                       ),
                     ),
                   ],)
@@ -104,20 +127,25 @@ class _BeginState extends State<Begin> {
               SizedBox(width: 15),
               Expanded(
                   child: Column(children: <Widget>[
-                    Image.asset('assets/dog2.jpg'),
-                    Text('Dog'),
-                    Text( 'DOG 2!',
+                    Image.asset('assets/sh3.jpg',
+                    width: 350,
+                    height: 350,
+                    ),
+                    SizedBox(height: 10),
+                    Text('Teenage Treats',
                       style: TextStyle(
                         color: Colors.blueGrey,
                         letterSpacing: 2.0,
                         fontSize: 18.0,
+                        fontFamily: 'Poppins'
                       ),
                     ),
-                    Text( 'This dog is very little!',
+                    Text( 'Sure to keep those doggies going!',
                       style: TextStyle(
                         color: Colors.blueGrey,
                         letterSpacing: 2.0,
                         fontSize: 12.0,
+                        fontFamily: 'Poppins'
                       ),
                     ),
                   ],)
@@ -125,20 +153,25 @@ class _BeginState extends State<Begin> {
               SizedBox(width: 15),
               Expanded(
                   child: Column(children: <Widget>[
-                    Image.asset('assets/dog3.jpg'),
-                    Text('Dog'),
-                    Text( 'DOG 3!',
+                    Image.asset('assets/sh3.jpg',
+                    width: 350,
+                    height: 350,
+                    ),
+                    SizedBox(height: 10),
+                    Text( 'Adult Treats',
                       style: TextStyle(
                         color: Colors.blueGrey,
                         letterSpacing: 2.0,
                         fontSize: 18.0,
+                        fontFamily: 'Poppins'
                       ),
                     ),
-                    Text( 'This dog has glasses!',
+                    Text( 'Thriving and still kicking!',
                       style: TextStyle(
                         color: Colors.blueGrey,
                         letterSpacing: 2.0,
                         fontSize: 12.0,
+                        fontFamily: 'Poppins',
                       ),
                     ),
                   ],)
@@ -158,6 +191,14 @@ class _BeginState extends State<Begin> {
                 color: Colors.blueGrey,
                 letterSpacing: 2.0,
                 fontSize: 16.0,
+                fontFamily: 'Poppins'
+              ),
+            ),
+            SizedBox(height: 40),
+            Text('This service is happily supplied by The Special Hands Club at the Walker Career Center',
+            style: TextStyle(
+              fontSize: 20,
+              fontFamily: 'Poppins'
               ),
             ),
           ],
