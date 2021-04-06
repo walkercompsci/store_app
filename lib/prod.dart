@@ -30,7 +30,7 @@ class _ProdState extends State<Prod> {
               label: Text("Contacts"),
             ),
             FlatButton.icon(onPressed: () {
-              Navigator.pushNamed(context, '/products');
+              Navigator.pushNamed(context, '/pictures');
               },
               icon: Icon(Icons.add_a_photo),
               label: Text("Community"),

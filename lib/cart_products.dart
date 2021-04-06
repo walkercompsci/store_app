@@ -53,32 +53,34 @@ class Single_cart_product extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      child: ListTile(
-        leading: Image.asset(cart_prod_picture, width: 80.0, height: 80.0,),
-        title: Text(cart_prod_name),
-        subtitle: Column(
-          children: <Widget>[
-            Row(
-              children: <Widget>[
-                Container(
-                  alignment: Alignment.topLeft,
-                  child: Text("\$${cart_prod_price}",
-                    style: TextStyle(
-                        fontSize: 18.0,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.blue),
+      child: Expanded(
+        child: ListTile(
+          leading: Image.asset(cart_prod_picture, width: 80.0, height: 80.0,),
+          title: Text(cart_prod_name),
+          subtitle: Column(
+            children: <Widget>[
+              Row(
+                children: <Widget>[
+                  Container(
+                    alignment: Alignment.topLeft,
+                    child: Text("\$${cart_prod_price}",
+                      style: TextStyle(
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.blue),
+                    ),
                   ),
-                ),
-              ],
-            ),
-          ],
-        ),
-        trailing: Column(
-          children: <Widget>[
-            //IconButton(icon: Icon(Icons.arrow_drop_up), onPressed: (){}),
-            Text("$cart_prod_qty"),
-            //IconButton(icon: Icon(Icons.arrow_drop_down), onPressed: (){})
-          ],
+                ],
+              ),
+            ],
+          ),
+          trailing: Column(
+            children: <Widget>[
+              IconButton(icon: Icon(Icons.arrow_drop_up), onPressed: (){}),
+              Text("$cart_prod_qty"),
+              IconButton(icon: Icon(Icons.arrow_drop_down), onPressed: (){})
+            ],
+          ),
         ),
       ),
     );
