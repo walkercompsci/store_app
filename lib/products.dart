@@ -1,6 +1,8 @@
 import 'package:store_app/prod.dart';
 import 'package:flutter/material.dart';
 import 'package:store_app/products_display.dart';
+import 'package:store_app/form2.dart';
+
 //
 class Products extends StatefulWidget {
   final prod_detail_name;
@@ -119,7 +121,7 @@ class _ProductsState extends State<Products> {
               Expanded(
                   child: MaterialButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, '/form');
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => new ShowForm()));
                       },
                     color: Colors.red,
                     textColor: Colors.white,

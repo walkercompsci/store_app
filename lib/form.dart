@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-
+import 'package:validators/validators.dart' as validator;
+import 'info.dart';
+import 'confirm.dart';
 
 class TextForm extends StatefulWidget {
   @override
@@ -8,77 +10,93 @@ class TextForm extends StatefulWidget {
 
 class _TextFormState extends State<TextForm> {
   final _formKey = GlobalKey<FormState>();
-
-  // final Uri params = Uri(
-  //   scheme: 'mailto',
-  //   path: 'santeala000@warren.k12.in.us',
-  //   query: 'test test', //add subject and body here
-  // );
-  //
-  // var url = params.toString();
-  // _launchEmail() async {
-  //   if (await canLaunch(url))  {
-  //     await launch(url);
-  //   } else {
-  //     throw 'Could not launch $url';
-  //   }
-  // }
+  Info info = Info();
 
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size.width/2.0;
     return Form(
-      key: _formKey,
-      child: Column(
+        key: _formKey,
+        child: Column(
         children: <Widget>[
-          new Container(
-            alignment: Alignment.topCenter,
-            width: size,
-            child: MyTextFormField(
-              hintText: 'First Name',
-              validator: (hintText) {
-                if (hintText.isEmpty) {
-                  return 'Please enter some text';
-                }
-                return null;
-                },
-            ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Container(
+                alignment: Alignment.topCenter,
+                width: size,
+                child: MyTextFormField(
+                  hintText: 'First Name',
+                  validator: (String value) {
+                    if (value.isEmpty) {
+                      return 'Please enter First name';
+                    }
+                    return null;
+                    },
+                  onSaved: (String value){
+                    info.firstName = value;
+                    },
+                ),
+              ),
+              Container(
+                alignment: Alignment.topCenter,
+                width: size,
+                child: MyTextFormField(
+                  hintText: 'Last Name',
+                  validator: (String value) {
+                    if (value.isEmpty) {
+                      return 'Please enter Last Name';
+                    }
+                    return null;
+                    },
+                  onSaved: (String value){
+                    info.lastName = value;
+                    },
+                ),
+              ),
+            ],
           ),
-          /*ElevatedButton(
-            onPressed: () async {
-              // ignore: unnecessary_statements
-              const url = "mailto:alansantes20@gmail.com";
-              if(await canLaunch(url)){
-                await canLaunch(url);
-              }else{
-                throw "could not launch $url";
+          MyTextFormField(
+            hintText: 'Email',
+            isEmail: true,
+            validator: (String value) {
+              if (!validator.isEmail(value)) {
+                return 'Please enter a valid email';
               }
-              //sendEmail();
-              if(_formKey.currentState.validate()){
-                ScaffoldMessenger
-                    .of(context)
-                    .showSnackBar(SnackBar(content: Text('Processing Data')));
+              return null;
+            },
+            onSaved: (String value){
+              info.email = value;
+            },
+          ),
+          RaisedButton(
+            color: Colors.blueAccent,
+            onPressed: () {
+              print('pressed');
+              if(_formKey.currentState.validate()) {
+                _formKey.currentState.save();
+
+                Navigator.push(context, MaterialPageRoute(
+                    builder: (context) => Confirm(
+                      info: this.info,))
+                );
               }
               },
-            child: Text('Submit'),
-          ),*/
+            child: Text('Submit',
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
+          ),
         ],
-      ),
+        ),
     );
   }
 }
-
-// ignore: camel_case_types
-class sendEmail extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-
-        );
-  }
-}
-
-
+// ScaffoldMessenger
+//     .of(context)
+//     .showSnackBar(SnackBar(content: Text('Processing Data')));
+//}
 
 class MyTextFormField extends StatelessWidget {
   final String hintText;

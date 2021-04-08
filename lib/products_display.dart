@@ -12,30 +12,25 @@ class _ProductsDetailsState extends State<ProductsDetails> {
   // ignore: non_constant_identifier_names
   var prod_list = [
     {
-      "name": "Treats",
+      "name": "Puppy Treats",
       "picture": "assets/dog1.jpg",
-      "price": 10,
+      "price": "Varies", //10,
     },
     {
-      "name": "Treat",
+      "name": "Teenage Treats",
       "picture": "assets/dog2.jpg",
-      "price": 20,
+      "price": "Varies", //40,
     },
     {
-      "name": "Trea",
+      "name": "Adult Treats",
       "picture": "assets/dog3.jpg",
-      "price": 30,
+      "price": "Varies", //30,
     },
-    {
-      "name": "Tre",
-      "picture": "assets/dog1.jpg",
-      "price": 40,
-    },
-    {
-      "name": "Tr",
-      "picture": "assets/dog2.jpg",
-      "price": 50,
-    }
+    // {
+    //   "name": "Tre",
+    //   "picture": "assets/dog1.jpg",
+    //   "price": "Varies",
+    // }
   ];
 
   @override
@@ -91,7 +86,8 @@ class Single_prod extends StatelessWidget {
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                     title: Text(
-                      "\$$prod_price",
+                      prod_price,
+                      //"\$$prod_price",
                       style: TextStyle(
                           color: Colors.black, fontWeight: FontWeight.w800),
                     ),

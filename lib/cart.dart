@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:store_app/cart_products.dart';
+import 'form2.dart';
 
 void main() => runApp(MaterialApp(
   home: Cart(),
@@ -32,7 +33,7 @@ class _CartState extends State<Cart> {
             Expanded(
                 child: MaterialButton(
                   onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => new Cart()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => new ShowForm()));
                     },
                   child: Text("Check Out",
                     style: TextStyle(color: Colors.white),),
