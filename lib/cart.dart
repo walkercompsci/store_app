@@ -18,7 +18,11 @@ class _CartState extends State<Cart> {
       backgroundColor: Colors.tealAccent,
       appBar: AppBar(
         elevation: 0.1,
-        title: Text("Cart"),
+        title: Text("Cart",
+          style: TextStyle(
+              fontFamily: 'Poppins'
+          ),
+        ),
       ),
       body: Cart_products(),
       bottomNavigationBar: new Container(
@@ -27,8 +31,16 @@ class _CartState extends State<Cart> {
           children: <Widget>[
             Expanded(
                 child: ListTile(
-                  title: Text("Total: "),
-                  subtitle: Text("\$8"),
+                  title: Text("Total: ",
+                    style: TextStyle(
+                        fontFamily: 'Poppins'
+                    ),
+                  ),
+                  subtitle: Text("\$8",
+                    style: TextStyle(
+                        fontFamily: 'Poppins'
+                    ),
+                  ),
                 )),
             Expanded(
                 child: MaterialButton(
@@ -36,7 +48,11 @@ class _CartState extends State<Cart> {
                     Navigator.push(context, MaterialPageRoute(builder: (context) => new ShowForm()));
                     },
                   child: Text("Check Out",
-                    style: TextStyle(color: Colors.white),),
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: "Poppins",
+                    ),
+                  ),
                   color: Colors.blue,
                 ),
             ),

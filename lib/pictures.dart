@@ -25,34 +25,57 @@ class _PicturesState extends State<Pictures> {
                     children: [
                       Text(
                         'Made By Special Hands',
+                        style: TextStyle(
+                            fontFamily: 'Poppins'
+                        ),
                       ),
                       FlatButton.icon(onPressed: () {
                         Navigator.pushNamed(context, '/begin');
                       },
                         icon: Icon(Icons.water_damage),
-                        label: Text("Home"),
+                        label: Text("Home",
+                          style: TextStyle(
+                              fontFamily: 'Poppins'
+                          ),
+                        ),
                       ),
                       FlatButton.icon(onPressed: () {
                         Navigator.pushNamed(context, '/mission');
                       },
                         icon: Icon(Icons.airport_shuttle),
-                        label: Text("Mission"),
+                        label: Text("Mission",
+                          style: TextStyle(
+                              fontFamily: 'Poppins'
+                          ),
+                        ),
                       ),
                       FlatButton.icon(onPressed: () {
                         Navigator.pushNamed(context, '/contacts');
                       },
                         icon: Icon(Icons.account_circle_rounded),
-                        label: Text("Contacts"),
+                        label: Text("Contacts",
+                          style: TextStyle(
+                              fontFamily: 'Poppins'
+                          ),
+                        ),
                       ),
                       Icon(Icons.add_a_photo),
                       SizedBox(width: 10),
-                      Text("Community"),
+                      Text("Community",
+                        style: TextStyle(
+                            fontFamily: 'Poppins'
+                        ),
+                      ),
                       SizedBox(width: 10,),
                       FlatButton.icon(onPressed: () {
                         Navigator.pushNamed(context, '/products');
                       },
                         icon: Icon(Icons.wb_sunny),
-                        label: Text("Products"),
+                        label: Text("Products",
+                          style: TextStyle(
+                              fontFamily: 'Poppins'
+                          ),
+                        ),
                       ),
                     ],
                   ),

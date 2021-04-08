@@ -83,13 +83,19 @@ class Single_prod extends StatelessWidget {
                   child: ListTile(
                     leading: Text(
                       prod_name,
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontFamily: "Poppins",
+                      ),
                     ),
                     title: Text(
                       prod_price,
                       //"\$$prod_price",
                       style: TextStyle(
-                          color: Colors.black, fontWeight: FontWeight.w800),
+                          color: Colors.black,
+                          fontWeight: FontWeight.w800,
+                          fontFamily: "Poppins",
+                      ),
                     ),
                   ),
                 ),

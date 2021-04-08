@@ -25,36 +25,59 @@ class _MissionState extends State<Mission> {
                   Text(
                     'Made By Special Hands',
                     textAlign: TextAlign.left,
+                  style: TextStyle(
+                  fontFamily: 'Poppins'
+                    ),
                   ),
                   FlatButton.icon(onPressed: () {
                     Navigator.pushNamed(context, '/begin');
                   },
                     icon: Icon(Icons.water_damage),
-                    label: Text("Home"),
+                    label: Text("Home",
+                      style: TextStyle(
+                          fontFamily: 'Poppins'
+                      ),
+                    ),
                   ),
                   Icon(Icons.airport_shuttle),
                   SizedBox(width: 10),
-                  Text("Mission"),
+                  Text("Mission",
+                    style: TextStyle(
+                        fontFamily: 'Poppins'
+                    ),
+                  ),
                   SizedBox(width: 10),
                   FlatButton.icon(onPressed: () {
                     Navigator.pushNamed(context, '/contacts');
                   },
                     icon: Icon(Icons.account_circle_rounded),
-                    label: Text("Contacts"),
+                    label: Text("Contacts",
+                      style: TextStyle(
+                          fontFamily: 'Poppins'
+                      ),
+                    ),
                   ),
                   SizedBox(width: 10,),
                   FlatButton.icon(onPressed: () {
                     Navigator.pushNamed(context, '/pictures');
                   },
                     icon: Icon(Icons.add_a_photo),
-                    label: Text("Community"),
+                    label: Text("Community",
+                      style: TextStyle(
+                          fontFamily: 'Poppins'
+                      ),
+                    ),
                   ),
                   SizedBox(width: 10,),
                   FlatButton.icon(onPressed: () {
                     Navigator.pushNamed(context, '/products');
                   },
                     icon: Icon(Icons.wb_sunny),
-                    label: Text("Products"),
+                    label: Text("Products",
+                      style: TextStyle(
+                          fontFamily: 'Poppins'
+                      ),
+                    ),
                   ),
                 ],
               ),
@@ -78,6 +101,7 @@ class _MissionState extends State<Mission> {
                 color: Colors.white,
                 letterSpacing: 2.0,
                 fontSize: 50.0,
+                fontFamily: 'Poppins',
               ),
             ),
             SizedBox(height: 30,),
@@ -104,7 +128,8 @@ class _MissionState extends State<Mission> {
                             style: TextStyle(
                               color: Colors.green[900],
                               letterSpacing: 2.0,
-                              fontSize: 22.0,
+                              fontSize: 20.0,
+                              fontFamily: 'Poppins',
                             ),
                             overflow: TextOverflow.ellipsis,
                             maxLines: 14,

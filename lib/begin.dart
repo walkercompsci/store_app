@@ -99,30 +99,35 @@ class _BeginState extends State<Begin> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Expanded(
-                  child: Column(children: <Widget>[
-                    Image.asset('assets/sh3.jpg',
-                    width: 350,
-                    height: 350,
-                    ),
-                    SizedBox(height: 10),
-                    Text( 'Puppy Treats',
-                      style: TextStyle(
-                        color: Colors.blueGrey,
-                        letterSpacing: 2.0,
-                        fontSize: 18.0,
-                        fontFamily: 'Poppins'
+                  child:
+                    Card(
+                      child: Column(
+                        children: [
+                        Image.asset('assets/sh3.jpg',
+                        width: 350,
+                        height: 350,
                       ),
-                    ),
+                      SizedBox(height: 10),
+                      Text( 'Puppy Treats',
+                        style: TextStyle(
+                            color: Colors.blueGrey,
+                            letterSpacing: 2.0,
+                            fontSize: 18.0,
+                            fontFamily: 'Poppins'
+                        ),
+                      ),
 
-                    Text( 'The little ones will love it!',
-                      style: TextStyle(
-                        color: Colors.blueGrey,
-                        letterSpacing: 2.0,
-                        fontSize: 12.0,
-                        fontFamily: 'Poppins'
+                      Text( 'The little ones will love it!',
+                        style: TextStyle(
+                            color: Colors.blueGrey,
+                            letterSpacing: 2.0,
+                            fontSize: 12.0,
+                            fontFamily: 'Poppins'
+                        ),
                       ),
-                    ),
-                  ],)
+                    ],
+                  )
+                ),
               ),
               SizedBox(width: 15),
               Expanded(
@@ -194,7 +199,7 @@ class _BeginState extends State<Begin> {
                 fontFamily: 'Poppins'
               ),
             ),
-            SizedBox(height: 40),
+            SizedBox(height: 20),
             Text('This service is happily supplied by The Special Hands Club at the Walker Career Center',
             style: TextStyle(
               fontSize: 20,

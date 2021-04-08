@@ -23,35 +23,58 @@ class _ContactsState extends State<Contacts> {
                 children: [
                     Text(
                       'Made By Special Hands',
+                      style: TextStyle(
+                          fontFamily: 'Poppins'
+                      ),
                     ),
                   FlatButton.icon(onPressed: () {
                     Navigator.pushNamed(context, '/begin');
                   },
                     icon: Icon(Icons.water_damage),
-                    label: Text("Home"),
+                    label: Text("Home",
+                      style: TextStyle(
+                          fontFamily: 'Poppins'
+                      ),
+                    ),
                   ),
                   FlatButton.icon(onPressed: () {
                     Navigator.pushNamed(context, '/mission');
                   },
                     icon: Icon(Icons.airport_shuttle),
-                    label: Text("Mission"),
+                    label: Text("Mission",
+                      style: TextStyle(
+                          fontFamily: 'Poppins'
+                      ),
+                    ),
                   ),
                   Icon(Icons.account_circle_rounded),
                   SizedBox(width: 10),
-                  Text("Contacts"),
+                  Text("Contacts",
+                    style: TextStyle(
+                        fontFamily: 'Poppins'
+                    ),
+                  ),
                   SizedBox(width: 10,),
                   FlatButton.icon(onPressed: () {
                     Navigator.pushNamed(context, '/pictures');
                   },
                     icon: Icon(Icons.add_a_photo),
-                    label: Text("Community"),
+                    label: Text("Community",
+                      style: TextStyle(
+                          fontFamily: 'Poppins'
+                      ),
+                    ),
                   ),
                   SizedBox(width: 10,),
                   FlatButton.icon(onPressed: () {
                     Navigator.pushNamed(context, '/products');
                   },
                     icon: Icon(Icons.wb_sunny),
-                    label: Text("Products"),
+                    label: Text("Products",
+                      style: TextStyle(
+                          fontFamily: 'Poppins'
+                      ),
+                    ),
                   ),
                 ],
               ),
@@ -95,6 +118,7 @@ class _ContactsState extends State<Contacts> {
                               'Jill Lines',
                               style: TextStyle(
                                 fontSize: 50.0,
+                                fontFamily: "Poppins",
                               ),
                           ),
                             ),
@@ -112,6 +136,7 @@ class _ContactsState extends State<Contacts> {
                                         color: Colors.orange[900],
                                         letterSpacing: 2.0,
                                         fontSize: 20.0,
+                                        fontFamily: "Poppins"
                                       ),
                                       overflow: TextOverflow.ellipsis,
                                       maxLines: 2,
@@ -147,6 +172,7 @@ class _ContactsState extends State<Contacts> {
                                   'Veronica Holmes',
                                   style: TextStyle(
                                     fontSize: 50.0,
+                                    fontFamily: "Poppins",
                                   ),
                                 ),
                               ),
@@ -164,6 +190,7 @@ class _ContactsState extends State<Contacts> {
                                       color: Colors.orange[900],
                                       letterSpacing: 2.0,
                                       fontSize: 20.0,
+                                      fontFamily: "Poppins",
                                     ),
                                     overflow: TextOverflow.ellipsis,
                                     maxLines: 2,
@@ -199,6 +226,7 @@ class _ContactsState extends State<Contacts> {
                                   'Dena Condra',
                                   style: TextStyle(
                                     fontSize: 50.0,
+                                    fontFamily: "Poppins",
                                   ),
                                 ),
                               ),
@@ -216,6 +244,7 @@ class _ContactsState extends State<Contacts> {
                                       color: Colors.orange[900],
                                       letterSpacing: 2.0,
                                       fontSize: 20.0,
+                                      fontFamily: "Poppins",
                                     ),
                                     overflow: TextOverflow.ellipsis,
                                     maxLines: 2,
@@ -251,6 +280,7 @@ class _ContactsState extends State<Contacts> {
                                   'Cheryl Clark',
                                   style: TextStyle(
                                     fontSize: 50.0,
+                                    fontFamily: "Poppins",
                                   ),
                                 ),
                               ),
@@ -268,6 +298,7 @@ class _ContactsState extends State<Contacts> {
                                       color: Colors.orange[900],
                                       letterSpacing: 2.0,
                                       fontSize: 20.0,
+                                      fontFamily: "Poppins",
                                     ),
                                     overflow: TextOverflow.ellipsis,
                                     maxLines: 2,
@@ -303,6 +334,7 @@ class _ContactsState extends State<Contacts> {
                                   'Airiele Bell',
                                   style: TextStyle(
                                     fontSize: 50.0,
+                                    fontFamily: "Poppins",
                                   ),
                                 ),
                               ),
@@ -320,6 +352,7 @@ class _ContactsState extends State<Contacts> {
                                       color: Colors.orange[900],
                                       letterSpacing: 2.0,
                                       fontSize: 20.0,
+                                      fontFamily: "Poppins",
                                     ),
                                     overflow: TextOverflow.ellipsis,
                                     maxLines: 2,

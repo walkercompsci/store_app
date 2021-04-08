@@ -21,23 +21,39 @@ class _ProdState extends State<Prod> {
               Navigator.pushNamed(context, '/mission');
               },
               icon: Icon(Icons.airport_shuttle),
-              label: Text("Mission"),
+              label: Text("Mission",
+                style: TextStyle(
+                    fontFamily: 'Poppins'
+                ),
+              ),
             ),
             FlatButton.icon(onPressed: () {
               Navigator.pushNamed(context, '/contacts');
               },
               icon: Icon(Icons.account_circle_rounded),
-              label: Text("Contacts"),
+              label: Text("Contacts",
+                style: TextStyle(
+                    fontFamily: 'Poppins'
+                ),
+              ),
             ),
             FlatButton.icon(onPressed: () {
               Navigator.pushNamed(context, '/pictures');
               },
               icon: Icon(Icons.add_a_photo),
-              label: Text("Community"),
+              label: Text("Community",
+                style: TextStyle(
+                    fontFamily: 'Poppins'
+                ),
+              ),
             ),
             Icon(Icons.wb_sunny),
             SizedBox(width: 10),
-            Text("Products"),
+            Text("Products",
+              style: TextStyle(
+                  fontFamily: 'Poppins'
+              ),
+            ),
             SizedBox(width: 10,),
           ],
         ),
