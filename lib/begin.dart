@@ -100,8 +100,7 @@ class _BeginState extends State<Begin> {
               children: [
                 Expanded(
                   child:
-                    Card(
-                      child: Column(
+                    Column(
                         children: [
                         Image.asset('assets/sh3.jpg',
                         width: 350,
@@ -128,9 +127,8 @@ class _BeginState extends State<Begin> {
                     ],
                   )
                 ),
-              ),
-              SizedBox(width: 15),
-              Expanded(
+                SizedBox(width: 15),
+                Expanded(
                   child: Column(children: <Widget>[
                     Image.asset('assets/sh3.jpg',
                     width: 350,
@@ -153,10 +151,11 @@ class _BeginState extends State<Begin> {
                         fontFamily: 'Poppins'
                       ),
                     ),
-                  ],)
-              ),
-              SizedBox(width: 15),
-              Expanded(
+                  ],
+                  )
+                ),
+                SizedBox(width: 15),
+                Expanded(
                   child: Column(children: <Widget>[
                     Image.asset('assets/sh3.jpg',
                     width: 350,
@@ -179,9 +178,12 @@ class _BeginState extends State<Begin> {
                         fontFamily: 'Poppins',
                       ),
                     ),
-                  ],)
+                  ],
+                 )
+                ),
+              ],
               ),
-            ],),),
+            ),
             SizedBox(height: 15),
             const Divider(
               height: 20,

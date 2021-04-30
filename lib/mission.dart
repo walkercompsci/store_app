@@ -142,7 +142,7 @@ class _MissionState extends State<Mission> {
                 SizedBox(width: 100,),
                 Expanded(
                   child: Image.asset(
-                    'assets/dog1.jpg',
+                    'assets/sh4.jpg',
                     height: 500,
                     width: 500,
                   ),

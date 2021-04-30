@@ -13,13 +13,14 @@ class _PicturesState extends State<Pictures> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.red[300],
       body: SafeArea(
         child: ListView(
           children: [
             Column(
               children: [
                 AppBar(
-                  backgroundColor: Colors.purple[300],
+                  backgroundColor: Colors.red[400],
                   title: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [

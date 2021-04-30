@@ -13,6 +13,7 @@ class _ContactsState extends State<Contacts> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.orange[200],
       body: SafeArea(
         child: Column(
           children: [
@@ -109,7 +110,7 @@ class _ContactsState extends State<Contacts> {
                             ),
                             borderRadius: BorderRadius.circular(12),
                           ),
-                          width: 1100,
+                          width: 1200,
                           child: Row(
                             children: [
                             Padding(
@@ -119,6 +120,7 @@ class _ContactsState extends State<Contacts> {
                               style: TextStyle(
                                 fontSize: 50.0,
                                 fontFamily: "Poppins",
+                                fontWeight: FontWeight.bold,
                               ),
                           ),
                             ),
@@ -131,12 +133,13 @@ class _ContactsState extends State<Contacts> {
                                 child: Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Text(
-                                      'Department Chair for Warren Central High School/Exceptional Learners  317-532-6200 ext 6401       Email: jlines@warren.k12.in.us',
+                                      'Department Chair for Warren Central High School/Exceptional Learners  317-532-6200 ext 6401     Email: jlines@warren.k12.in.us',
                                       style: TextStyle(
                                         color: Colors.orange[900],
                                         letterSpacing: 2.0,
                                         fontSize: 20.0,
-                                        fontFamily: "Poppins"
+                                        fontFamily: "Poppins",
+                                        fontStyle: FontStyle.italic,
                                       ),
                                       overflow: TextOverflow.ellipsis,
                                       maxLines: 2,
@@ -163,7 +166,7 @@ class _ContactsState extends State<Contacts> {
                             ),
                             borderRadius: BorderRadius.circular(12),
                           ),
-                          width: 1280,
+                          width: 1400,
                           child: Row(
                             children: [
                               Padding(
@@ -173,6 +176,7 @@ class _ContactsState extends State<Contacts> {
                                   style: TextStyle(
                                     fontSize: 50.0,
                                     fontFamily: "Poppins",
+                                    fontWeight: FontWeight.bold,
                                   ),
                                 ),
                               ),
@@ -185,12 +189,13 @@ class _ContactsState extends State<Contacts> {
                                 child: Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Text(
-                                    'Department Chair for Warren Central High School/Exceptional Learners  317-532-6200 ext 6401       Email: jlines@warren.k12.in.us',
+                                    'Department Chair for Warren Central High School/Exceptional Learners  317-532-6200 ext 6401      Email: vholmes@warren.k12.in.us',
                                     style: TextStyle(
                                       color: Colors.orange[900],
                                       letterSpacing: 2.0,
                                       fontSize: 20.0,
                                       fontFamily: "Poppins",
+                                      fontStyle: FontStyle.italic,
                                     ),
                                     overflow: TextOverflow.ellipsis,
                                     maxLines: 2,
@@ -217,7 +222,7 @@ class _ContactsState extends State<Contacts> {
                             ),
                             borderRadius: BorderRadius.circular(12),
                           ),
-                          width: 1200,
+                          width: 1325,
                           child: Row(
                             children: [
                               Padding(
@@ -227,6 +232,7 @@ class _ContactsState extends State<Contacts> {
                                   style: TextStyle(
                                     fontSize: 50.0,
                                     fontFamily: "Poppins",
+                                    fontWeight: FontWeight.bold,
                                   ),
                                 ),
                               ),
@@ -239,12 +245,13 @@ class _ContactsState extends State<Contacts> {
                                 child: Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Text(
-                                    'Department Chair for Warren Central High School/Exceptional Learners  317-532-6200 ext 6401       Email: jlines@warren.k12.in.us',
+                                    'Department Chair for Warren Central High School/Exceptional Learners  317-532-6200 ext 6401       Email: dcondra@warren.k12.in.us',
                                     style: TextStyle(
                                       color: Colors.orange[900],
                                       letterSpacing: 2.0,
                                       fontSize: 20.0,
                                       fontFamily: "Poppins",
+                                      fontStyle: FontStyle.italic,
                                     ),
                                     overflow: TextOverflow.ellipsis,
                                     maxLines: 2,
@@ -271,7 +278,7 @@ class _ContactsState extends State<Contacts> {
                             ),
                             borderRadius: BorderRadius.circular(12),
                           ),
-                          width: 1175,
+                          width: 1300,
                           child: Row(
                             children: [
                               Padding(
@@ -281,6 +288,7 @@ class _ContactsState extends State<Contacts> {
                                   style: TextStyle(
                                     fontSize: 50.0,
                                     fontFamily: "Poppins",
+                                    fontWeight: FontWeight.bold,
                                   ),
                                 ),
                               ),
@@ -293,12 +301,13 @@ class _ContactsState extends State<Contacts> {
                                 child: Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Text(
-                                    'Department Chair for Warren Central High School/Exceptional Learners  317-532-6200 ext 6401       Email: jlines@warren.k12.in.us',
+                                    'Department Chair for Warren Central High School/Exceptional Learners  317-532-6200 ext 6401       Email: cclark2@warren.k12.in.us',
                                     style: TextStyle(
                                       color: Colors.orange[900],
                                       letterSpacing: 2.0,
                                       fontSize: 20.0,
                                       fontFamily: "Poppins",
+                                      fontStyle: FontStyle.italic,
                                     ),
                                     overflow: TextOverflow.ellipsis,
                                     maxLines: 2,
@@ -325,7 +334,7 @@ class _ContactsState extends State<Contacts> {
                             ),
                             borderRadius: BorderRadius.circular(12),
                           ),
-                          width: 1135,
+                          width: 1250,
                           child: Row(
                             children: [
                               Padding(
@@ -335,6 +344,7 @@ class _ContactsState extends State<Contacts> {
                                   style: TextStyle(
                                     fontSize: 50.0,
                                     fontFamily: "Poppins",
+                                    fontWeight: FontWeight.bold,
                                   ),
                                 ),
                               ),
@@ -347,12 +357,13 @@ class _ContactsState extends State<Contacts> {
                                 child: Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Text(
-                                    'Department Chair for Warren Central High School/Exceptional Learners  317-532-6200 ext 6401       Email: jlines@warren.k12.in.us',
+                                    'Department Chair for Warren Central High School/Exceptional Learners  317-532-6200 ext 6401       Email: abell1@warren.k12.in.us',
                                     style: TextStyle(
                                       color: Colors.orange[900],
                                       letterSpacing: 2.0,
                                       fontSize: 20.0,
                                       fontFamily: "Poppins",
+                                      fontStyle: FontStyle.italic,
                                     ),
                                     overflow: TextOverflow.ellipsis,
                                     maxLines: 2,
