@@ -136,7 +136,7 @@ class _ProductsState extends State<Products> {
           Divider(),
           new ListTile(
             title: Text("Product details"),
-            subtitle: Text("Place the information here about the product"),
+            subtitle: Text("Yummy Treats"),
           )
         ],
       ),
