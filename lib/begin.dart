@@ -130,7 +130,7 @@ class _BeginState extends State<Begin> {
                 SizedBox(width: 15),
                 Expanded(
                   child: Column(children: <Widget>[
-                    Image.asset('assets/sh3.jpg',
+                    Image.asset('assets/sh11.jpg',
                     width: 350,
                     height: 350,
                     ),
