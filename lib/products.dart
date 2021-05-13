@@ -1,7 +1,9 @@
 import 'package:store_app/prod.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:store_app/products_display.dart';
 import 'package:store_app/form2.dart';
+
 
 class Products extends StatefulWidget {
   final prod_detail_name;
@@ -18,8 +20,19 @@ class Products extends StatefulWidget {
 }
 
 class _ProductsState extends State<Products> {
+
+   launchURL() async {
+    const url = 'https://accounts.google.com/AccountChooser?service=mail&continue=https://mail.google.com/mail/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
+    var myFunc;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.purple[300],
@@ -50,13 +63,6 @@ class _ProductsState extends State<Products> {
             SizedBox(width: 10,),
           ],
         ),
-        // actions: <Widget>[
-        //   IconButton(
-        //     icon: Icon(Icons.shopping_cart),
-        //     color: Colors.white,
-        //     onPressed: () {},
-        //   ),
-        // ],
       ),
       body: new ListView(
         children: [
@@ -118,13 +124,15 @@ class _ProductsState extends State<Products> {
           Row(
             children: [
               Expanded(
-                  child: MaterialButton(
-                    onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => new ShowForm()));
-                      },
+                  child: FlatButton(
+                    onPressed:
+                    (){
+                    launchURL();
+                    // Navigator.push(context, MaterialPageRoute(builder: (context) => new ShowForm()));
+                    },
                     color: Colors.red,
                     textColor: Colors.white,
-                    elevation: 0.2,
+                    // elevation: 0.2,
                     //Will send to form
                     child: Text("Buy now"),
                   ),

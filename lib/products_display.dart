@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:store_app/prod.dart';
 import 'package:store_app/products.dart';
-//
+
 class ProductsDetails extends StatefulWidget {
   @override
   _ProductsDetailsState createState() => _ProductsDetailsState();
 }
 
 class _ProductsDetailsState extends State<ProductsDetails> {
-
   // ignore: non_constant_identifier_names
   var prod_list = [
     {
@@ -26,11 +25,6 @@ class _ProductsDetailsState extends State<ProductsDetails> {
       "picture": "assets/sh3.jpg",
       "price": "Varies", //30,
     },
-    // {
-    //   "name": "Tre",
-    //   "picture": "assets/dog1.jpg",
-    //   "price": "Varies",
-    // }
   ];
 
   @override

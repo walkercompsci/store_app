@@ -1,6 +1,6 @@
 name: store_app
 description: A new Flutter project.
-//
+
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -24,7 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   validators:
-#  firebase_core: 0.4.0
+  url_launcher:
   provider:
 
   # The following adds the Cupertino Icons font to your application.

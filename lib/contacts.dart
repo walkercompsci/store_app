@@ -86,7 +86,7 @@ class _ContactsState extends State<Contacts> {
                     icon: Icon(Icons.shopping_cart),
                     color: Colors.white,
                     onPressed: () {
-                      Navigator.pushNamed(context, '/cart');
+                      // Navigator.pushNamed(context, '/cart');
                     },
                   ),
                 ),

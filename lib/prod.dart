@@ -62,7 +62,7 @@ class _ProdState extends State<Prod> {
             icon: Icon(Icons.shopping_cart),
             color: Colors.white,
             onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => new Cart()));
+              // Navigator.push(context, MaterialPageRoute(builder: (context) => new Cart()));
             },
           ),
         ],
