@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:store_app/prod.dart';
 import 'package:store_app/products.dart';
-
+//
 class ProductsDetails extends StatefulWidget {
   @override
   _ProductsDetailsState createState() => _ProductsDetailsState();
@@ -13,17 +13,17 @@ class _ProductsDetailsState extends State<ProductsDetails> {
   var prod_list = [
     {
       "name": "Puppy Treats",
-      "picture": "assets/dog1.jpg",
+      "picture": "assets/sh3.jpg",
       "price": "Varies", //10,
     },
     {
       "name": "Teenage Treats",
-      "picture": "assets/dog2.jpg",
+      "picture": "assets/sh3.jpg",
       "price": "Varies", //40,
     },
     {
       "name": "Adult Treats",
-      "picture": "assets/dog3.jpg",
+      "picture": "assets/sh3.jpg",
       "price": "Varies", //30,
     },
     // {

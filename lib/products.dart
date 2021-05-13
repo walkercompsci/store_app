@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:store_app/products_display.dart';
 import 'package:store_app/form2.dart';
 
-//
 class Products extends StatefulWidget {
   final prod_detail_name;
   final prod_detail_price;
@@ -136,7 +135,7 @@ class _ProductsState extends State<Products> {
           Divider(),
           new ListTile(
             title: Text("Product details"),
-            subtitle: Text("Place the information here about the product"),
+            subtitle: Text("Yummy Treats"),
           )
         ],
       ),
