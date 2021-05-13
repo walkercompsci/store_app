@@ -94,48 +94,128 @@ class _PicturesState extends State<Pictures> {
                   ],
                 ),
                 SizedBox(height: 30),
-                Row(
-                  children: [
-                    Expanded(
-                      child: Image.asset(
-                        'assets/sh1.jpg',
-                        height: 500,
-                        width: 250,
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Image.asset(
+                          'assets/sh13.jpg',
+                          height: 375,
+                          width: 250,
+                        ),
                       ),
-                    ),
-                    Expanded(
-                      child: Image.asset(
-                        'assets/sh2.jpg',
-                        height: 500,
-                        width: 500,
+                      Expanded(
+                        child: Image.asset(
+                          'assets/sh7.jpg',
+                          height: 375,
+                          width: 500,
+                        ),
                       ),
-                    ),
-                    Expanded(
-                      child: Image.asset(
-                        'assets/sh3.jpg',
-                        height: 500,
-                        width: 500,
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Image.asset(
+                          'assets/sh15.jpg',
+                          height: 500,
+                          width: 250,
+                        ),
                       ),
-                    ),
-                  ],
+                      Expanded(
+                        child: Image.asset(
+                          'assets/sh2.jpg',
+                          height: 500,
+                          width: 500,
+                        ),
+                      ),
+                      Expanded(
+                        child: Image.asset(
+                          'assets/sh10.jpg',
+                          height: 500,
+                          width: 500,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
                 SizedBox(height: 30),
-                Row(
-                  children: [
-                    Expanded(
-                      child: Image.asset(
-                        'assets/sh4.jpg',
-                        height: 500,
-                        width: 500,
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Image.asset(
+                          'assets/sh4.jpg',
+                          height: 500,
+                          width: 500,
+                        ),
+                      ),Expanded(
+                        child: Image.asset(
+                          'assets/sh6.jpg',
+                          height: 500,
+                          width: 500,
+                        ),
                       ),
-                    ),Expanded(
-                      child: Image.asset(
-                        'assets/sh5.jpg',
-                        height: 500,
-                        width: 500,
+                    ],
+                  ),
+                ),
+                SizedBox(height: 30),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Image.asset(
+                          'assets/sh1.jpg',
+                          height: 500,
+                          width: 250,
+                        ),
                       ),
-                    ),
-                  ],
+                      Expanded(
+                        child: Image.asset(
+                          'assets/sh11.jpg',
+                          height: 500,
+                          width: 500,
+                        ),
+                      ),
+                      Expanded(
+                        child: Image.asset(
+                          'assets/sh8.jpg',
+                          height: 500,
+                          width: 500,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 30),
+
+                SizedBox(height: 30),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(8, 0, 8, 16),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Image.asset(
+                          'assets/sh5.jpg',
+                          height: 500,
+                          width: 250,
+                        ),
+                      ),
+                      Expanded(
+                        child: Image.asset(
+                          'assets/sh14.jpg',
+                          height: 375,
+                          width: 500,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),

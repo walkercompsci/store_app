@@ -102,7 +102,7 @@ class _BeginState extends State<Begin> {
                   child:
                     Column(
                         children: [
-                        Image.asset('assets/sh3.jpg',
+                        Image.asset('assets/sh9.jpg',
                         width: 350,
                         height: 350,
                       ),
@@ -130,7 +130,7 @@ class _BeginState extends State<Begin> {
                 SizedBox(width: 15),
                 Expanded(
                   child: Column(children: <Widget>[
-                    Image.asset('assets/sh11.jpg',
+                    Image.asset('assets/sh3.jpg',
                     width: 350,
                     height: 350,
                     ),
@@ -157,7 +157,7 @@ class _BeginState extends State<Begin> {
                 SizedBox(width: 15),
                 Expanded(
                   child: Column(children: <Widget>[
-                    Image.asset('assets/sh3.jpg',
+                    Image.asset('assets/sh12.jpg',
                     width: 350,
                     height: 350,
                     ),
