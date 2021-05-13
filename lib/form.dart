@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:validators/validators.dart' as validator;
 import 'info.dart';
 import 'confirm.dart';
-
+//
 class TextForm extends StatefulWidget {
   @override
   _TextFormState createState() => _TextFormState();

@@ -16,10 +16,10 @@ class _BeginState extends State<Begin> {
             Text(
               'Made By Special Hands',
               style: TextStyle(
-                color: Colors.blue,
-                letterSpacing: 2.0,
-                fontSize: 50.0,
-                fontFamily: 'Poppins'
+                  color: Colors.blue,
+                  letterSpacing: 2.0,
+                  fontSize: 50.0,
+                  fontFamily: 'Poppins'
               ),
             ),
             SizedBox(height: 20),
@@ -32,7 +32,7 @@ class _BeginState extends State<Begin> {
                   icon: Icon(Icons.airport_shuttle),
                   label: Text("Mission",
                     style: TextStyle(
-                      fontFamily: 'Poppins'
+                        fontFamily: 'Poppins'
                     ),
                   ),
                 ),
@@ -51,8 +51,8 @@ class _BeginState extends State<Begin> {
                 },
                   icon: Icon(Icons.add_a_photo),
                   label: Text("Community",
-                      style: TextStyle(
-                      fontFamily: 'Poppins'
+                    style: TextStyle(
+                        fontFamily: 'Poppins'
                     ),
                   ),
                 ),
@@ -96,92 +96,92 @@ class _BeginState extends State<Begin> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: new Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Expanded(
-                  child:
-                    Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Expanded(
+                      child:
+                      Column(
                         children: [
-                        Image.asset('assets/sh9.jpg',
-                        width: 350,
-                        height: 350,
-                      ),
-                      SizedBox(height: 10),
-                      Text( 'Puppy Treats',
-                        style: TextStyle(
-                            color: Colors.blueGrey,
-                            letterSpacing: 2.0,
-                            fontSize: 18.0,
-                            fontFamily: 'Poppins'
-                        ),
-                      ),
+                          Image.asset('assets/sh9.jpg',
+                            width: 350,
+                            height: 350,
+                          ),
+                          SizedBox(height: 10),
+                          Text( 'Puppy Treats',
+                            style: TextStyle(
+                                color: Colors.blueGrey,
+                                letterSpacing: 2.0,
+                                fontSize: 18.0,
+                                fontFamily: 'Poppins'
+                            ),
+                          ),
 
-                      Text( 'The little ones will love it!',
-                        style: TextStyle(
+                          Text( 'The little ones will love it!',
+                            style: TextStyle(
+                                color: Colors.blueGrey,
+                                letterSpacing: 2.0,
+                                fontSize: 12.0,
+                                fontFamily: 'Poppins'
+                            ),
+                          ),
+                        ],
+                      )
+                  ),
+                  SizedBox(width: 15),
+                  Expanded(
+                      child: Column(children: <Widget>[
+                        Image.asset('assets/sh3.jpg',
+                          width: 350,
+                          height: 350,
+                        ),
+                        SizedBox(height: 10),
+                        Text('Teenage Treats',
+                          style: TextStyle(
+                              color: Colors.blueGrey,
+                              letterSpacing: 2.0,
+                              fontSize: 18.0,
+                              fontFamily: 'Poppins'
+                          ),
+                        ),
+                        Text( 'Sure to keep those doggies going!',
+                          style: TextStyle(
+                              color: Colors.blueGrey,
+                              letterSpacing: 2.0,
+                              fontSize: 12.0,
+                              fontFamily: 'Poppins'
+                          ),
+                        ),
+                      ],
+                      )
+                  ),
+                  SizedBox(width: 15),
+                  Expanded(
+                      child: Column(children: <Widget>[
+                        Image.asset('assets/sh12.jpg',
+                          width: 350,
+                          height: 350,
+                        ),
+                        SizedBox(height: 10),
+                        Text( 'Adult Treats',
+                          style: TextStyle(
+                              color: Colors.blueGrey,
+                              letterSpacing: 2.0,
+                              fontSize: 18.0,
+                              fontFamily: 'Poppins'
+                          ),
+                        ),
+                        Text( 'Thriving and still kicking!',
+                          style: TextStyle(
                             color: Colors.blueGrey,
                             letterSpacing: 2.0,
                             fontSize: 12.0,
-                            fontFamily: 'Poppins'
+                            fontFamily: 'Poppins',
+                          ),
                         ),
-                      ),
-                    ],
-                  )
-                ),
-                SizedBox(width: 15),
-                Expanded(
-                  child: Column(children: <Widget>[
-                    Image.asset('assets/sh3.jpg',
-                    width: 350,
-                    height: 350,
-                    ),
-                    SizedBox(height: 10),
-                    Text('Teenage Treats',
-                      style: TextStyle(
-                        color: Colors.blueGrey,
-                        letterSpacing: 2.0,
-                        fontSize: 18.0,
-                        fontFamily: 'Poppins'
-                      ),
-                    ),
-                    Text( 'Sure to keep those doggies going!',
-                      style: TextStyle(
-                        color: Colors.blueGrey,
-                        letterSpacing: 2.0,
-                        fontSize: 12.0,
-                        fontFamily: 'Poppins'
-                      ),
-                    ),
-                  ],
-                  )
-                ),
-                SizedBox(width: 15),
-                Expanded(
-                  child: Column(children: <Widget>[
-                    Image.asset('assets/sh12.jpg',
-                    width: 350,
-                    height: 350,
-                    ),
-                    SizedBox(height: 10),
-                    Text( 'Adult Treats',
-                      style: TextStyle(
-                        color: Colors.blueGrey,
-                        letterSpacing: 2.0,
-                        fontSize: 18.0,
-                        fontFamily: 'Poppins'
-                      ),
-                    ),
-                    Text( 'Thriving and still kicking!',
-                      style: TextStyle(
-                        color: Colors.blueGrey,
-                        letterSpacing: 2.0,
-                        fontSize: 12.0,
-                        fontFamily: 'Poppins',
-                      ),
-                    ),
-                  ],
-                 )
-                ),
-              ],
+                      ],
+                      )
+                  ),
+                ],
               ),
             ),
             SizedBox(height: 15),
@@ -195,17 +195,17 @@ class _BeginState extends State<Begin> {
             SizedBox(height: 10.0),
             Text( 'For More Information Click On The Icons Above! (Shipping And Pricing May Very)',
               style: TextStyle(
-                color: Colors.blueGrey,
-                letterSpacing: 2.0,
-                fontSize: 16.0,
-                fontFamily: 'Poppins'
+                  color: Colors.blueGrey,
+                  letterSpacing: 2.0,
+                  fontSize: 16.0,
+                  fontFamily: 'Poppins'
               ),
             ),
             SizedBox(height: 20),
             Text('This service is happily supplied by The Special Hands Club at the Walker Career Center',
-            style: TextStyle(
-              fontSize: 20,
-              fontFamily: 'Poppins'
+              style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'Poppins'
               ),
             ),
           ],
