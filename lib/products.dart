@@ -1,8 +1,11 @@
+import 'package:flutter/services.dart';
 import 'package:store_app/prod.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:store_app/products_display.dart';
 import 'package:store_app/form2.dart';
+import 'package:mailto/mailto.dart';
+
 
 
 class Products extends StatefulWidget {
@@ -19,20 +22,23 @@ class Products extends StatefulWidget {
   _ProductsState createState() => _ProductsState();
 }
 
+
+
 class _ProductsState extends State<Products> {
 
-   launchURL() async {
-    const url = 'https://accounts.google.com/AccountChooser?service=mail&continue=https://mail.google.com/mail/';
-    if (await canLaunch(url)) {
-      await launch(url);
+  _launchURL() async {
+    const mailUrl = 'mailto:santeala000@warren.k12.in.us';
+
+    if (await launch(mailUrl)) {
+      await launch(mailUrl);
     } else {
-      throw 'Could not launch $url';
+      throw 'Could not launch $mailUrl';
     }
   }
 
+
   @override
   Widget build(BuildContext context) {
-    var myFunc;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.purple[300],
@@ -127,7 +133,7 @@ class _ProductsState extends State<Products> {
                   child: FlatButton(
                     onPressed:
                     (){
-                    launchURL();
+                    _launchURL();
                     // Navigator.push(context, MaterialPageRoute(builder: (context) => new ShowForm()));
                     },
                     color: Colors.red,
@@ -143,7 +149,7 @@ class _ProductsState extends State<Products> {
           Divider(),
           new ListTile(
             title: Text("Product details"),
-            subtitle: Text("Yummy Treats"),
+            subtitle: Text("Email dcondra@warren.k12.in.us for purchases or more information."),
           )
         ],
       ),
