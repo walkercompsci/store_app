@@ -17,6 +17,22 @@ class _ProdState extends State<Prod> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Text(
+              'Made By Special Hands',
+              style: TextStyle(
+                  fontFamily: 'Poppins'
+              ),
+            ),
+            FlatButton.icon(onPressed: () {
+              Navigator.pushNamed(context, '/begin');
+            },
+              icon: Icon(Icons.water_damage),
+              label: Text("Home",
+                style: TextStyle(
+                    fontFamily: 'Poppins'
+                ),
+              ),
+            ),
             FlatButton.icon(onPressed: () {
               Navigator.pushNamed(context, '/mission');
               },

@@ -95,19 +95,19 @@ class _PicturesState extends State<Pictures> {
                 ),
                 SizedBox(height: 30),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.fromLTRB(8, 0, 8, 16),
                   child: Row(
                     children: [
                       Expanded(
                         child: Image.asset(
-                          'assets/sh13.jpg',
-                          height: 375,
+                          'assets/sh5.jpg',
+                          height: 500,
                           width: 250,
                         ),
                       ),
                       Expanded(
                         child: Image.asset(
-                          'assets/sh7.jpg',
+                          'assets/sh14.jpg',
                           height: 375,
                           width: 500,
                         ),
@@ -115,6 +115,7 @@ class _PicturesState extends State<Pictures> {
                     ],
                   ),
                 ),
+                SizedBox(height: 30),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Row(
@@ -194,24 +195,15 @@ class _PicturesState extends State<Pictures> {
                   ),
                 ),
                 SizedBox(height: 30),
-
-                SizedBox(height: 30),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(8, 0, 8, 16),
+                  padding: const EdgeInsets.all(8.0),
                   child: Row(
                     children: [
                       Expanded(
                         child: Image.asset(
-                          'assets/sh5.jpg',
-                          height: 500,
-                          width: 250,
-                        ),
-                      ),
-                      Expanded(
-                        child: Image.asset(
-                          'assets/sh14.jpg',
+                          'assets/sh13.jpg',
                           height: 375,
-                          width: 500,
+                          width: 250,
                         ),
                       ),
                     ],
