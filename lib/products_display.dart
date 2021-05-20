@@ -12,18 +12,15 @@ class _ProductsDetailsState extends State<ProductsDetails> {
   var prod_list = [
     {
       "name": "Puppy Treats",
-      "picture": "assets/sh3.jpg",
-      "price": "Varies", //10,
+      "picture": "assets/sh9.jpg",
     },
     {
       "name": "Teenage Treats",
       "picture": "assets/sh3.jpg",
-      "price": "Varies", //40,
     },
     {
       "name": "Adult Treats",
-      "picture": "assets/sh3.jpg",
-      "price": "Varies", //30,
+      "picture": "assets/sh12.jpg",
     },
   ];
 
@@ -37,7 +34,7 @@ class _ProductsDetailsState extends State<ProductsDetails> {
         return Single_prod(
           prod_name: prod_list[index]['name'],
           prod_picture: prod_list[index]['picture'],
-          prod_price: prod_list[index]['price'],
+          //prod_price: prod_list[index]['price'],
         );
       });
   }
@@ -46,12 +43,12 @@ class _ProductsDetailsState extends State<ProductsDetails> {
 class Single_prod extends StatelessWidget {
   final prod_name;
   final prod_picture;
-  final prod_price;
+  //final prod_price;
 
   Single_prod({
     this.prod_name,
     this.prod_picture,
-    this.prod_price,
+    //this.prod_price,
   });
 
   @override
@@ -68,7 +65,7 @@ class Single_prod extends StatelessWidget {
                 //passing values to new page
                   builder: (context) => new Products(
                     prod_detail_name: prod_name,
-                    prod_detail_price: prod_price,
+                    //prod_detail_price: prod_price,
                     prod_detail_picture: prod_picture,
               ))),
               child: GridTile(
@@ -82,15 +79,15 @@ class Single_prod extends StatelessWidget {
                           fontFamily: "Poppins",
                       ),
                     ),
-                    title: Text(
-                      prod_price,
-                      //"\$$prod_price",
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.w800,
-                          fontFamily: "Poppins",
-                      ),
-                    ),
+                    // title: Text(
+                    //   prod_price,
+                    //   //"\$$prod_price",
+                    //   style: TextStyle(
+                    //       color: Colors.black,
+                    //       fontWeight: FontWeight.w800,
+                    //       fontFamily: "Poppins",
+                    //   ),
+                    // ),
                   ),
                 ),
                 child: Image.asset(

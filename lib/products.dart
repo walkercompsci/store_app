@@ -10,12 +10,12 @@ import 'package:mailto/mailto.dart';
 
 class Products extends StatefulWidget {
   final prod_detail_name;
-  final prod_detail_price;
+  //final prod_detail_price;
   final prod_detail_picture;
 
   Products({
     this.prod_detail_name,
-    this.prod_detail_price,
+    //this.prod_detail_price,
     this.prod_detail_picture
   });
   @override
@@ -25,12 +25,13 @@ class Products extends StatefulWidget {
 
 
 class _ProductsState extends State<Products> {
-
+//https://stackoverflow.com/questions/50622947/flutter-sending-form-data-to-email
   _launchURL() async {
-    const mailUrl = 'mailto:santeala000@warren.k12.in.us';
+    const mailUrl = 'https://forms.gle/8k9hg6gj9tVGLJ7R6';
 
+    //'mailto:dcondra@warren.k12.in.us';
     if (await launch(mailUrl)) {
-      await launch(mailUrl);
+      print('success');
     } else {
       throw 'Could not launch $mailUrl';
     }
@@ -73,7 +74,7 @@ class _ProductsState extends State<Products> {
       body: new ListView(
         children: [
           new Container(
-            height: MediaQuery.of(context).size.width/2.0,
+            height: MediaQuery.of(context).size.width/4.0,
             child: GridTile(
               child: Container(
                 color: Colors.white,
@@ -85,48 +86,48 @@ class _ProductsState extends State<Products> {
                   leading: new Text(widget.prod_detail_name,
                     style: TextStyle(
                         fontWeight: FontWeight.bold, fontSize: 16.0),),
-                  title: new Row(
-                    children: <Widget>[
-                      Expanded(
-                        child: new Text("\$${widget.prod_detail_price}")
-                      ),
-                    ],
-                  ),
+                  // title: new Row(
+                  //   children: <Widget>[
+                  //     Expanded(
+                  //       child: new Text("\$${widget.prod_detail_price}")
+                  //     ),
+                  //   ],
+                  // ),
                 ),
               ),),
           ),
-          Row(
-            children: [
-            Expanded(
-              child: MaterialButton(
-                onPressed: () {
-                  showDialog(context: context,
-                  builder: (context){
-                    return AlertDialog(
-                        title: Text("Quantity"),
-                      content: Text("Choose the quantity"),
-                      actions: [
-                        new MaterialButton(onPressed: (){
-                          Navigator.of(context).pop(context);
-                        },
-                        child: Text("close"),)
-                      ],
-                    );
-                  });
-                },
-                color: Colors.white,
-                textColor: Colors.grey,
-                elevation: 0.2,
-                child: Row(
-                  children: [
-                    Expanded(child: Text("Qty")),
-                    Expanded(child: Icon(Icons.arrow_drop_down)),
-                  ],
-                ),
-            )
-            ),
-            ],
-          ),
+          // Row(
+          //   children: [
+          //   Expanded(
+          //     child: MaterialButton(
+          //       onPressed: () {
+          //         showDialog(context: context,
+          //         builder: (context){
+          //           return AlertDialog(
+          //               title: Text("Quantity"),
+          //             content: Text("Choose the quantity"),
+          //             actions: [
+          //               new MaterialButton(onPressed: (){
+          //                 Navigator.of(context).pop(context);
+          //               },
+          //               child: Text("close"),)
+          //             ],
+          //           );
+          //         });
+          //       },
+          //       color: Colors.white,
+          //       textColor: Colors.grey,
+          //       elevation: 0.2,
+          //       // child: Row(
+          //       //   children: [
+          //       //     Expanded(child: Text("Qty")),
+          //       //     Expanded(child: Icon(Icons.arrow_drop_down)),
+          //       //   ],
+          //       // ),
+          //   )
+          //   ),
+          //   ],
+          // ),
           Row(
             children: [
               Expanded(
@@ -149,7 +150,9 @@ class _ProductsState extends State<Products> {
           Divider(),
           new ListTile(
             title: Text("Product details"),
-            subtitle: Text("Email dcondra@warren.k12.in.us for purchases or more information."),
+            subtitle: Text("Email dcondra@warren.k12.in.us for purchases or more information."
+
+                ),
           )
         ],
       ),
